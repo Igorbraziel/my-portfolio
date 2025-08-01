@@ -69,3 +69,36 @@
     list-style: none;
   }
 }
+
+@layer components {
+  .spinner {
+
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .dots-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .dot {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(21, 21, 21);
+    border-radius: 50%;
+
+    animation:
+  }
+}
