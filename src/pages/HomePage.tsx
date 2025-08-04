@@ -1,8 +1,8 @@
-import RoundedSpinner from "../components/ui/RoundedSpinner";
+import DotsSpinner from "../components/ui/DotsSpinner";
 
 export default function HomePage(){
   return <div>Home Page
-    <RoundedSpinner />
+    <DotsSpinner />
 
   </div>
 }

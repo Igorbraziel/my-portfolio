@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion, type Transition } from "motion/react";
 
 const containerVariants = {
   start: {
@@ -22,7 +22,7 @@ const dotVariants = {
   },
 };
 
-const dotTransition = {
+const dotTransition: Transition = {
   duration: 0.5,
   repeat: Infinity,
   repeatType: "reverse",
@@ -40,17 +40,17 @@ export default function DotsSpinner() {
         animate="end"
       >
         <motion.span
-          className="block h-2 w-2 rounded-[50%] bg-blue-700 sm:h-3.5 sm:w-3.5 lg:h-5 lg:w-5 dark:bg-blue-950"
+          className="block h-2 w-2 rounded-[50%] bg-blue-950 sm:h-3.5 sm:w-3.5 lg:h-5 lg:w-5 dark:bg-blue-800"
           variants={dotVariants}
           transition={dotTransition}
         />
         <motion.span
-          className="block h-2 w-2 rounded-[50%] bg-blue-700 sm:h-3.5 sm:w-3.5 lg:h-5 lg:w-5 dark:bg-blue-950"
+          className="block h-2 w-2 rounded-[50%] bg-blue-950 sm:h-3.5 sm:w-3.5 lg:h-5 lg:w-5 dark:bg-blue-800"
           variants={dotVariants}
           transition={dotTransition}
         />
         <motion.span
-          className="block h-2 w-2 rounded-[50%] bg-blue-700 sm:h-3.5 sm:w-3.5 lg:h-5 lg:w-5 dark:bg-blue-950"
+          className="block h-2 w-2 rounded-[50%] bg-blue-950 sm:h-3.5 sm:w-3.5 lg:h-5 lg:w-5 dark:bg-blue-800"
           variants={dotVariants}
           transition={dotTransition}
         />
