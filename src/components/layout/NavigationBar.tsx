@@ -1,15 +1,18 @@
+import { NavLink } from "react-router";
+
+import PortraitIcon from "@mui/icons-material/Portrait";
+
 import { useDarkMode } from "../../hooks/useDarkMode";
 
+import Button from "../ui/Button";
+import LinkList from "../ui/LinkList";
+
 export default function NavigationBar() {
-  const { toggleDarkMode } = useDarkMode();
+  
 
   return (
-    <nav className="w-full">
-      <ul className="flex">
-        <li>
-          <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
-        </li>
-      </ul>
+    <nav className="flex w-full items-center justify-between">
+      <LinkList />
     </nav>
   );
 }
