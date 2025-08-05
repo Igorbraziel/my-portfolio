@@ -90,14 +90,21 @@
 
   .active::after {
     font-weight: 900;
-    content: '';
+    content: "";
     position: absolute;
 
-    bottom:0;
+    bottom: 0;
     left: 10%;
     width: 80%;
     height: 4px;
 
     background-color: oklch(25.7% 0.09 281.288);
+  }
+
+  @media (min-width: 768px) {
+    .active::after {
+      left: 0;
+      width: 100%;
+    }
   }
 }

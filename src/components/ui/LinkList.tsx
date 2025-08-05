@@ -4,7 +4,7 @@ import ButtonIcon from "./ButtonIcon";
 
 export default function LinkList() {
   return (
-    <ul className="flex px-2 py-3 gap-4 sm:gap-5 md:gap-6 lg:gap-7">
+    <ul className="flex px-2 py-3 gap-4 sm:gap-5 md:gap-5 md:grid md:grid-cols-2">
       {links.map((link, index) => (
         <li key={index}>
           <NavLink to={link.path} className="relative dark:after:bg-indigo-200">
