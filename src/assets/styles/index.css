@@ -88,10 +88,16 @@
     border: 0;
   }
 
-  .active {
-    text-decoration-line: underline;
-    font-weight: 700;
-    color: oklch(38.6% 0.063 188.416);
-    background-color: oklch(60% 0.118 184.704);
+  .active::after {
+    font-weight: 900;
+    content: '';
+    position: absolute;
+
+    bottom:0;
+    left: 10%;
+    width: 80%;
+    height: 4px;
+
+    background-color: oklch(25.7% 0.09 281.288);
   }
 }
