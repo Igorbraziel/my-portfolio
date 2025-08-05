@@ -1,11 +1,12 @@
-import profilePicture from "../../assets/images/profile_picture.jpg";
-import { useDarkMode } from "../../hooks/useDarkMode";
-import ButtonIcon from "../ui/ButtonIcon";
-
-import WbSunnyIcon from "@mui/icons-material/WbSunny";
-import NightlightRoundIcon from "@mui/icons-material/NightlightRound";
 import { createTheme, ThemeProvider } from "@mui/material";
-import { user } from "../../data/user";
+import NightlightRoundIcon from "@mui/icons-material/NightlightRound";
+import WbSunnyIcon from "@mui/icons-material/WbSunny";
+
+import { useDarkMode } from "../../hooks/useDarkMode";
+
+import ButtonIcon from "../ui/ButtonIcon";
+import Logo from "../ui/Logo";
+import UserInformation from "../ui/UserInformation";
 
 const theme = createTheme({
   palette: {
@@ -18,20 +19,11 @@ export default function Header() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="md:col-start-2 md:col-end-2 lg:mg-6 xl:mg-7 md:ml-4 mx-2 mb-2 flex max-w-3xl items-center justify-between rounded-4xl border border-gray-300 bg-slate-200 px-4 py-3 shadow-xl sm:mx-3 sm:mb-3 sm:px-5 sm:py-4 md:mb-5 md:flex-col md:justify-start md:gap-3 md:max-h-70 lg:flex-row lg:justify-between lg:mb-6 xl:mb-7 dark:bg-slate-800">
-        <img
-          className="h-15 w-15 rounded-full object-cover object-left sm:h-20 sm:w-20 md:h-25 md:w-25 lg:h-30 lg:w-30"
-          src={profilePicture}
-          alt="profile picture"
-        />
-        <header>
-          <h2 className="bold text-sm sm:text-base md:text-lg lg:text-xl">
-            {user.name}
-          </h2>
-          <h3 className="text-[10px] font-light italic sm:text-xs md:text-sm lg:text-base xl:text-lg">
-            {user.description}
-          </h3>
-        </header>
+      <header className="md:col-start-2 md:col-end-2 lg:mg-6 xl:mg-7 md:ml-4 mx-2 mb-2 flex max-w-3xl items-center justify-between rounded-4xl border border-gray-300 bg-slate-200 px-4 py-3 shadow-xl sm:mx-3 sm:mb-3 sm:px-5 sm:py-4 md:mb-5 md:flex-col md:justify-start md:gap-3 md:max-h-70 lg:flex-row lg:justify-between lg:mb-6 xl:mb-7 dark:bg-slate-800">
+        <Logo />
+        <div>
+          <UserInformation />
+        </div>
         <ButtonIcon type="toggle-icon" size="small" onClick={toggleDarkMode}>
           {isDark ? (
             <NightlightRoundIcon titleAccess="Moon Icon" />
@@ -39,7 +31,7 @@ export default function Header() {
             <WbSunnyIcon titleAccess="Sun Icon" color="warning" />
           )}
         </ButtonIcon>
-      </div>
+      </header>
     </ThemeProvider>
   );
 }

@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Header from "./Header";
 import NavigationBar from "./NavigationBar";
 import { Outlet } from "react-router";
@@ -8,6 +9,7 @@ export default function AppLayout() {
       <Header />
       <NavigationBar />
       <Outlet />
+      <Footer/>
     </div>
   );
 }
