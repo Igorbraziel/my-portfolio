@@ -33,7 +33,7 @@ export default function ButtonIcon({
   return (
     <button
       onClick={onClick}
-      className={`flex cursor-pointer flex-col items-center justify-center uppercase ${sizeStyle} ${type === "link" ? "md:w-full md:flex-row md:justify-evenly md:gap-5 md:border md:text-xl lg:text-2xl" : "rounded-xl bg-yellow-50 dark:bg-slate-950"}`}
+      className={`flex cursor-pointer flex-col items-center justify-center uppercase ${sizeStyle} ${type === "link" ? "md:bg-slate-200 md:dark:bg-slate-800 md:w-full md:flex-row md:justify-evenly md:gap-5 lg:gap-7 md:border md:text-xl lg:text-2xl xl:text-4xl" : "rounded-xl bg-yellow-50 dark:bg-slate-950"}`}
     >
       {children}
       {label}
