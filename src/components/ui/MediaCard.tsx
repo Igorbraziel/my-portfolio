@@ -9,7 +9,7 @@ export default function MediaCard({ socialMedia }: MediaCartProps) {
   return (
     <li>
       <Link
-        className={`flex cursor-pointer items-center gap-1.5 shadow-md shadow-neutral-950 sm:gap-2 md:gap-3 lg:gap-4 xl:gap-5 ${socialMedia.bgColor} rounded-md p-1 sm:py-2 md:px-2 lg:px-3`}
+        className={`flex cursor-pointer items-center gap-1.5 shadow-md shadow-neutral-950 sm:gap-2 md:gap-3 lg:gap-4 xl:gap-5 ${socialMedia.bgColor} rounded-md px-2 py-1 sm:py-2 md:px-2.5 lg:px-3 lg:py-2.5`}
         key={socialMedia.name}
         to={socialMedia.profileURL}
         target="_blank"

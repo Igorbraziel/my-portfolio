@@ -91,15 +91,4 @@
 
     background-color: oklch(25.7% 0.09 281.288);
   }
-
-  @media (min-width: 768px) {
-    .active::after {
-      left: 0;
-      width: 100%;
-    }
-
-    .active {
-      text-decoration-line: underline;
-    }
-  }
 }
