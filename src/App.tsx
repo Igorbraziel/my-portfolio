@@ -10,6 +10,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import ProjectPage from "./pages/ProjectPage";
 import PageNotFound from "./pages/PageNotFound";
 import SkillsPage from "./pages/SkillsPage";
+import EducationPage from "./pages/EducationPage";
 
 function App() {
   return (
@@ -20,12 +21,13 @@ function App() {
             <Route index element={<Navigate to="/homepage" />} />
             <Route path="homepage" element={<HomePage />} />
             <Route path="about" element={<AboutPage />} />
-            <Route path="contact" element={<ContactPage />} />
+            <Route path="education" element={<EducationPage />} />
+            <Route path="skills" element={<SkillsPage />} />
             <Route path="projects">
               <Route index element={<ProjectsPage />} />
               <Route path=":pid" element={<ProjectPage />} />
             </Route>
-            <Route path="skills" element={<SkillsPage />} />
+            <Route path="contact" element={<ContactPage />} />
             <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>

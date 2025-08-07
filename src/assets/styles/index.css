@@ -2,15 +2,6 @@
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-@theme {
-  --color-secondary-light: oklch(0.448 0.119 151.328);
-  --color-secondary-normal: oklch(0.393 0.095 152.535);
-  --color-secondary-dark: oklch(0.266 0.065 152.934);
-  --color-primary-light: oklch(0.432 0.095 166.913);
-  --color-primary-normal: oklch(0.378 0.077 168.94);
-  --color-primary-dark: oklch(0.262 0.051 172.552);
-}
-
 @layer base {
   *,
   *::before,
@@ -26,9 +17,9 @@
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
   }
+
   body {
-    min-height: 100vh;
-    min-height: 100svh;
+    min-height: 100dvh;
     font-family: "Roboto Mono", monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
