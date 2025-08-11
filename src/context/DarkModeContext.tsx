@@ -1,5 +1,6 @@
-import { useEffect, useState, type PropsWithChildren } from "react";
+import { useEffect, type Dispatch, type PropsWithChildren } from "react";
 import { createContext } from "react";
+import useLocalStorageState from "../hooks/useLocalStorageState";
 
 interface DarkModeObject {
   isDark: boolean;
@@ -9,20 +10,27 @@ interface DarkModeObject {
 const DarkModeContext = createContext<null | DarkModeObject>(null);
 
 function DarkModeProvider({ children }: PropsWithChildren) {
-  const [isDark, setIsDark] = useState(
-    window.matchMedia("prefers-color-scheme: dark").matches
+  const isDarkLocalState = useLocalStorageState(
+    window.matchMedia("prefers-color-scheme: dark").matches,
+    "isDark",
   );
+  const [isDark, setIsDark] = [
+    isDarkLocalState.at(0) as boolean,
+    isDarkLocalState.at(1) as Dispatch<unknown>,
+  ];
 
   useEffect(() => {
-    if(isDark){
-      document.documentElement.setAttribute("data-theme", "dark")
+    if (isDark) {
+      document.documentElement.setAttribute("data-theme", "dark");
     } else {
-      document.documentElement.setAttribute("data-theme", "light")
+      document.documentElement.setAttribute("data-theme", "light");
     }
-  }, [isDark])
+  }, [isDark]);
 
-  function toggleDarkMode(){
-    setIsDark(isDark => !isDark)
+  function toggleDarkMode() {
+    setIsDark((isDark: boolean) => {
+      return !isDark;
+    });
   }
 
   return (

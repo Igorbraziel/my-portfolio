@@ -1,10 +1,12 @@
 import { type PropsWithChildren } from "react";
+import { motion } from "motion/react";
 
 interface ButtonIconProps {
   size: string;
-  type: "link" | "toggle-icon";
+  type?: "link" | "toggle-icon";
   label?: string;
   onClick?: () => void;
+  style?: string;
 }
 
 export default function ButtonIcon({
@@ -13,6 +15,7 @@ export default function ButtonIcon({
   onClick,
   type,
   children,
+  style,
 }: PropsWithChildren<ButtonIconProps>) {
   let sizeStyle;
 
@@ -31,12 +34,14 @@ export default function ButtonIcon({
   }
 
   return (
-    <button
+    <motion.button
       onClick={onClick}
-      className={`flex cursor-pointer flex-col items-center justify-center uppercase ${sizeStyle} ${type === "link" ? "md:text-xs lg:text-sm xl:text-base" : "rounded-xl bg-yellow-50 dark:bg-slate-950"}`}
+      className={`flex cursor-pointer flex-col items-center justify-center uppercase ${sizeStyle} ${type === "link" ? "hover:bg-gray-300 md:text-xs lg:text-sm xl:text-base hover:dark:bg-gray-700" : type === "toggle-icon" ? "rounded-xl bg-yellow-50 dark:bg-slate-950" : style ? style : ""}`}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
     >
       {children}
       {label}
-    </button>
+    </motion.button>
   );
 }

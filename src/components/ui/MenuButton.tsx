@@ -9,10 +9,17 @@ const theme = createTheme({
   },
 });
 
-export default function MenuButton() {
+interface MenuButtonProps {
+  onClick?: () => void;
+}
+
+export default function MenuButton({ onClick }: MenuButtonProps) {
   return (
     <ThemeProvider theme={theme}>
-      <button className="rounded-full cursor-pointer bg-zinc-300 p-1.5 sm:p-2 dark:bg-zinc-200">
+      <button
+        onClick={onClick}
+        className="cursor-pointer rounded-full bg-zinc-300 p-1.5 sm:p-2 dark:bg-zinc-200"
+      >
         <MenuIcon color="primary" />
       </button>
     </ThemeProvider>
