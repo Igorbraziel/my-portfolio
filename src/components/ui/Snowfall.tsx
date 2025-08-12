@@ -4,14 +4,14 @@ import { random } from '../../utils/random';
 const Snowflake = () => {
   const x = random(-10, 110) + 'vw';        // Horizontal position (vw allows it to be responsive)
   const yStart = random(-20, -10) + 'vh';   // Start just above the screen
-  const duration = random(10, 25);         // Falling speed
+  const duration = random(10, 20);         // Falling speed
   const delay = random(0, 5);             // Start delay
   const scale = random(0.5, 1.5);          // Size
   const drift = random(-15, 15);           // Side-to-side movement
 
   return (
     <motion.div
-      className="bg-violet-400 rounded-full"
+      className="bg-blue-300 rounded-full"
       style={{
         position: 'absolute',
         left: x,
@@ -44,7 +44,7 @@ const Snowfall = ({ count = 200 }: SnowfallProps) => {
   return (
     <div
       aria-hidden="true"
-      className="fixed top-0 left-0 z-[-1] w-screen h-screen overflow-hidden bg-slate-50 pointer-events-none"
+      className="fixed top-0 left-0 z-[-1] w-screen h-screen overflow-hidden bg-slate-100 pointer-events-none"
     >
       {/* Create an array and map over it to render 'count' snowflakes */}
       {[...Array(count)].map((_, i) => (

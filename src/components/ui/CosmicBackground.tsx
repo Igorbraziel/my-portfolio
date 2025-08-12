@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { useMemo } from 'react';
 import { random } from '../../utils/random';
 import React from 'react';
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 const Star = ({ driftX, driftY }: {driftX: number; driftY: number }) => {
   const { top, left, twinkleDuration, driftDurationX, driftDurationY, delay } = useMemo(() => ({
@@ -67,6 +68,11 @@ const Star = ({ driftX, driftY }: {driftX: number; driftY: number }) => {
 };
 
 export const CosmicBackground = () => {
+  const isTablet = useMediaQuery("(min-width: 768px)");
+  const isLaptop = useMediaQuery("(min-width: 1024px)")
+
+  const starNumber = isTablet ? 150 : isLaptop ? 200 : 100;
+
   return (
     <div
       aria-hidden="true"
@@ -75,17 +81,17 @@ export const CosmicBackground = () => {
     >
       {/* Layer 1: Foreground stars - largest, brightest, and fastest drift */}
       <div className="absolute inset-0 opacity-80" style={{ transform: 'scale(1)' }}>
-        {[...Array(100)].map((_, i) => <Star key={`l1-${i}`} driftX={100} driftY={50} />)}
+        {[...Array(starNumber)].map((_, i) => <Star key={`l1-${i}`} driftX={100} driftY={250} />)}
       </div>
 
       {/* Layer 2: Mid-ground stars - medium size, brightness, and speed */}
       <div className="absolute inset-0 opacity-50" style={{ transform: 'scale(0.6)' }}>
-        {[...Array(100)].map((_, i) => <Star key={`l2-${i}`} driftX={60} driftY={30} />)}
+        {[...Array(starNumber)].map((_, i) => <Star key={`l2-${i}`} driftX={60} driftY={30} />)}
       </div>
       
       {/* Layer 3: Background stars - smallest, dimmest, and slowest drift */}
       <div className="absolute inset-0 opacity-30" style={{ transform: 'scale(0.3)' }}>
-        {[...Array(100)].map((_, i) => <Star key={`l3-${i}`} driftX={20} driftY={10} />)}
+        {[...Array(starNumber)].map((_, i) => <Star key={`l3-${i}`} driftX={20} driftY={10} />)}
       </div>
     </div>
   );

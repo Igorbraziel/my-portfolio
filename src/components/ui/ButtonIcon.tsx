@@ -36,7 +36,7 @@ export default function ButtonIcon({
   return (
     <motion.button
       onClick={onClick}
-      className={`flex cursor-pointer flex-col items-center justify-center uppercase ${sizeStyle} ${type === "link" ? "hover:bg-gray-300 md:text-xs lg:text-sm xl:text-base hover:dark:bg-gray-700" : type === "toggle-icon" ? "rounded-xl bg-yellow-50 dark:bg-slate-950" : style ? style : ""}`}
+      className={`flex cursor-pointer flex-col items-center justify-center uppercase ${sizeStyle} ${type === "link" ? "hover:bg-gray-200 md:text-xs lg:text-sm xl:text-base hover:dark:bg-gray-700" : type === "toggle-icon" ? "rounded-xl bg-yellow-50 dark:bg-slate-950" : style ? style : ""}`}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
