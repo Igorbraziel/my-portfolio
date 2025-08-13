@@ -1,19 +1,19 @@
-import { motion } from 'motion/react';
-import { random } from '../../utils/random';
+import { motion } from "motion/react";
+import { random } from "../../utils/random";
 
 const Snowflake = () => {
-  const x = random(-10, 110) + 'vw';        // Horizontal position (vw allows it to be responsive)
-  const yStart = random(-20, -10) + 'vh';   // Start just above the screen
-  const duration = random(10, 20);         // Falling speed
-  const delay = random(0, 5);             // Start delay
-  const scale = random(0.5, 1.5);          // Size
-  const drift = random(-15, 15);           // Side-to-side movement
+  const x = random(-10, 110) + "vw"; // Horizontal position (vw allows it to be responsive)
+  const yStart = random(-20, -10) + "vh"; // Start just above the screen
+  const duration = random(10, 20); // Falling speed
+  const delay = random(0, 5); // Start delay
+  const scale = random(0.5, 1.5); // Size
+  const drift = random(-15, 15); // Side-to-side movement
 
   return (
     <motion.div
-      className="bg-blue-300 rounded-full"
+      className="rounded-full bg-violet-500"
       style={{
-        position: 'absolute',
+        position: "absolute",
         left: x,
         top: yStart,
         width: `${5 * scale}px`,
@@ -21,30 +21,29 @@ const Snowflake = () => {
         opacity: scale, // Smaller flakes are more transparent
       }}
       animate={{
-        y: '110vh', // Animate to just below the viewport
+        y: "110vh", // Animate to just below the viewport
         x: `calc(${x} + ${drift}px)`, // Add side-to-side drift
       }}
       transition={{
         duration: duration,
         delay: delay,
         repeat: Infinity,
-        repeatType: 'loop',
-        ease: 'linear',
+        repeatType: "loop",
+        ease: "linear",
       }}
     />
   );
 };
 
 interface SnowfallProps {
-  count?: number
+  count?: number;
 }
 
 const Snowfall = ({ count = 200 }: SnowfallProps) => {
-
   return (
     <div
       aria-hidden="true"
-      className="fixed top-0 left-0 z-[-1] w-screen h-screen overflow-hidden bg-slate-100 pointer-events-none"
+      className="pointer-events-none fixed top-0 left-0 z-[-1] h-screen w-screen overflow-hidden bg-slate-100"
     >
       {/* Create an array and map over it to render 'count' snowflakes */}
       {[...Array(count)].map((_, i) => (
