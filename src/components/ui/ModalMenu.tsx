@@ -1,6 +1,6 @@
 import MenuButton from "./MenuButton";
 import Modal from "./Modal";
-import SideNavigation from "./SideNavigation";
+import SideNavigation from "../layout/SideNavigation";
 
 export default function ModalMenu() {
   return (

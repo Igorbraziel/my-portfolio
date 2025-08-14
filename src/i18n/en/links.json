@@ -1,0 +1,23 @@
+{
+  "links": [
+    {
+      "label": "home"
+    },
+    {
+      "label": "about"
+    },
+    {
+      "label": "education"
+    },
+    {
+      "label": "skills"
+    },
+    {
+      "label": "projects"
+    },
+    {
+      "label": "contact"
+    }
+  ]
+}
+

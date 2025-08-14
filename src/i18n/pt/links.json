@@ -1,0 +1,22 @@
+{
+  "links": [
+    {
+      "label": "home"
+    },
+    {
+      "label": "sobre"
+    },
+    {
+      "label": "educação"
+    },
+    {
+      "label": "habilidades"
+    },
+    {
+      "label": "projetos"
+    },
+    {
+      "label": "contatos"
+    }
+  ]
+}

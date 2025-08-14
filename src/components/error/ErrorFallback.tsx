@@ -9,6 +9,7 @@ export default function ErrorFallback({
   error,
   resetErrorBoundary,
 }: ErrorFallbackProps) {
+
   return (
     <main className="relative flex min-h-screen flex-col items-center gap-5 p-3 text-center sm:gap-6 sm:p-4 md:gap-7 md:p-5 lg:gap-8 lg:p-6 xl:gap-10 xl:p-7">
       <img

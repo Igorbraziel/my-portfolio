@@ -33,8 +33,6 @@ const StyledModal = forwardRef<HTMLDivElement, StyledModalProps>(
         ? `${position.y}px ${position.x}px`
         : "50% 50%";
 
-    console.log(position, positionStyle);
-
     return (
       <div
         ref={ref}

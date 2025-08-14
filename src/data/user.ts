@@ -1,31 +1,15 @@
-export const user = {
-  name: "Igor Reis Braziel",
-  subtitles: [""],
-  address: "Brazil",
-  media: [
-    {
-      name: "LinkedIn",
-      profileURL: "https://www.linkedin.com/in/igor-reis-braziel-499b00300/",
-      mediaIcon: "linkedin.png",
-      bgColor: "bg-blue-700",
-      textColor: "text-blue-50",
-    },
-    {
-      name: "GitHub",
-      profileURL: "https://github.com/Igorbraziel",
-      mediaIcon: "github.png",
-      bgColor: "bg-stone-800",
-      textColor: "text-stone-50",
-    },
-    {
-      name: "Instagram",
-      profileURL: "https://www.instagram.com/igor_reis04/",
-      mediaIcon: "instagram.png",
-      bgColor: "bg-rose-600",
-      textColor: "text-rose-50",
-    },
-  ],
-};
+import { useTranslation } from "react-i18next";
+
+export function useUserData() {
+  const { t } = useTranslation("user");
+
+  return {
+    name: t("name"),
+    subtitles: t("subtitles", { returnObjects: true }) as string[],
+    address: t("address"),
+    media: t("media", { returnObjects: true }) as SocialMedia[],
+  };
+}
 
 export type SocialMedia = {
   name: string;

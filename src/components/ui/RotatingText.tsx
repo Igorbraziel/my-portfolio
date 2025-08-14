@@ -15,7 +15,7 @@ export default function RotatingText() {
   }, []);
 
   return (
-    <div className="font-heading h-10 overflow-hidden text-lg font- text-neutral-800 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl dark:text-neutral-200">
+    <div className="font-heading h-10 overflow-hidden text-lg text-neutral-600 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl dark:text-neutral-200">
       <AnimatePresence mode="wait">
         <motion.h2
           key={testTitles.at(index)}

@@ -1,11 +1,13 @@
 import { Link } from "react-router";
-import { links } from "../../data/links";
+import { useLinksData } from "../../data/links";
 
 interface SideNavigationProps {
   onClose?: () => void;
 }
 
 export default function SideNavigation({ onClose }: SideNavigationProps) {
+  const links = useLinksData();
+
   return (
     <nav className="mt-2">
       <ul>
