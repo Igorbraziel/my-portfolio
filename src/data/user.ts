@@ -8,6 +8,7 @@ export function useUserData() {
     subtitles: t("subtitles", { returnObjects: true }) as string[],
     address: t("address"),
     media: t("media", { returnObjects: true }) as SocialMedia[],
+    shortResume: t("shortResume"),
   };
 }
 

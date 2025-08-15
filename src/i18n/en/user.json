@@ -1,6 +1,11 @@
 {
   "name": "Igor Reis Braziel",
-  "subtitles": ["Full Stack Developer", "Computer Science Student", "Data Scientist", "Software Engineer"],
+  "subtitles": [
+    "Full Stack Developer",
+    "Computer Science Student",
+    "Data Scientist",
+    "Software Engineer"
+  ],
   "address": "Brazil",
   "media": [
     {
@@ -24,5 +29,6 @@
       "bgColor": "bg-rose-600",
       "textColor": "text-rose-50"
     }
-  ]
+  ],
+  "shortResume": "I build modern and intuitive web applications using Next.js, React, Django, Spring Boot and more. I also have knowledge in Data Science and Machine Learning using Python. I'm a competent professional who is always working on projects and improving my skills."
 }

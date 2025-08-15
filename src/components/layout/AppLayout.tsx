@@ -9,7 +9,7 @@ export default function AppLayout() {
   const { isDark } = useDarkMode();
 
   return (
-    <div className="relative z-0 min-h-screen bg-slate-100 text-neutral-900 dark:bg-slate-900 dark:text-neutral-100">
+    <div className="flex flex-col relative z-0 min-h-screen bg-slate-100 text-neutral-900 dark:bg-slate-900 dark:text-neutral-100">
       <Header />
       {isDark ? <CosmicBackground /> : <Snowfall />}
       <Outlet />
@@ -17,3 +17,4 @@ export default function AppLayout() {
     </div>
   );
 }
+ 
