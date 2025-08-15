@@ -9,7 +9,7 @@ export default function Footer() {
       <div>
         <p>Built with ❤️ in {user.address}</p>
         <p>
-          ©️ {new Date().getFullYear()} by <strong>{user.name}</strong>, All
+          <strong>©️</strong> {new Date().getFullYear()} by <strong>{user.name}</strong>, All
           rights reserved
         </p>
       </div>

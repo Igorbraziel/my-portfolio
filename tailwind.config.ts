@@ -7,6 +7,7 @@ const config: Config = {
       fontFamily: {
         heading: ["Rubik Dirt", "sans-serif"],
         title: ["Inter", "sans-serif"],
+        description: ["DM Serif Text", "sans-serif"]
       },
     },
   },

@@ -25,10 +25,10 @@ export default function NextPageLink({ path, children }: NextPageProps) {
   const { isDark } = useDarkMode()
 
   return (
-    <div className="flex justify-end">
+    <div className="flex justify-end mb-3 mt-1 md:mt-4">
       <DynamicBackground
         colors={isDark ? darkColors : lightColors}
-        className="rounded-xl px-3 py-2 duration-100 hover:scale-110"
+        className="rounded-xl px-3 py-2 duration-100 hover:scale-115 text-sm sm:text-base md:text-lg lg:text-xl hover:font-extrabold"
       >
         <Link to={path}>
           {children} <EastIcon />
