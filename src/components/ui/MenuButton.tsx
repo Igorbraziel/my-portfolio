@@ -18,7 +18,7 @@ export default function MenuButton({ onClick }: MenuButtonProps) {
     <ThemeProvider theme={theme}>
       <button
         onClick={onClick}
-        className="cursor-pointer rounded-full bg-zinc-300 p-1.5 sm:p-2 dark:bg-zinc-200"
+        className="cursor-pointer rounded-full bg-zinc-400 p-1.5 sm:p-2 dark:bg-zinc-200"
       >
         <MenuIcon color="primary" />
       </button>

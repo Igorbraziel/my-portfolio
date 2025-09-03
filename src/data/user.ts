@@ -9,6 +9,7 @@ export function useUserData() {
     address: t("address"),
     media: t("media", { returnObjects: true }) as SocialMedia[],
     shortResume: t("shortResume"),
+    about: t("about"),
   };
 }
 

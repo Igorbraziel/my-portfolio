@@ -26,7 +26,7 @@
 
   body {
     min-height: 100dvh;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Lato", monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

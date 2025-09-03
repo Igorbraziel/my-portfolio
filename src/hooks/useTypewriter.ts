@@ -10,7 +10,7 @@ export default function useTypewriter(text: string, speed: number) {
         clearInterval(interval);
       }
       setDisplayedText((currentText) => {
-        return currentText === text ? text : currentText + text[index];
+        return currentText === text ? text : text[index] ? currentText + text[index] : text;
       });
       setIndex((index) => index + 1);
     }, speed);
