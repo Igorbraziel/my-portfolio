@@ -10,18 +10,25 @@ import enLinks from "./i18n/en/links.json";
 import esLinks from "./i18n/es/links.json";
 import ptLinks from "./i18n/pt/links.json";
 
+import enSettings from "./i18n/en/settings.json";
+import esSettings from "./i18n/es/settings.json";
+import ptSettings from "./i18n/pt/settings.json";
+
 const resources = {
   en: {
     user: enUser,
     links: enLinks,
+    settings: enSettings,
   },
   es: {
     user: esUser,
     links: esLinks,
+    settings: esSettings,
   },
   pt: {
     user: ptUser,
     links: ptLinks,
+    settings: ptSettings,
   },
 };
 

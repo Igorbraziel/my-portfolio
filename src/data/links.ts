@@ -3,7 +3,6 @@ import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import SchoolIcon from "@mui/icons-material/School";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import EngineeringIcon from "@mui/icons-material/Engineering";
-import InfoIcon from "@mui/icons-material/Info";
 import { useTranslation } from "react-i18next";
 
 export function useLinksData() {
@@ -15,12 +14,6 @@ export function useLinksData() {
       path: "/homepage",
       icon: CabinIcon,
       emoji: "🏠",
-    },
-    {
-      label: "about",
-      path: "/about",
-      icon: InfoIcon,
-      emoji: "ℹ️",
     },
     {
       label: "education",

@@ -1,22 +1,47 @@
-import { useEffect, useState } from "react";
+import { useEffect, useReducer } from "react";
+
+type State = {
+  displayedText: string;
+  index: number;
+};
+
+type Action = {
+  type: string;
+  payload: string;
+};
+
+const initialState = {
+  displayedText: "",
+  index: 0,
+};
+
+const reducer = (state: State, action: Action): State => {
+  switch (action.type) {
+    case "text/write":
+      return {
+        displayedText: state.displayedText + action.payload,
+        index: state.index + 1,
+      };
+    default:
+      throw new Error("Unknown action type!");
+  }
+};
 
 export default function useTypewriter(text: string, speed: number) {
-  const [displayedText, setDisplayedText] = useState("");
-  const [index, setIndex] = useState(0);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (index >= text.length) {
+      if (state.index >= text.length) {
         clearInterval(interval);
       }
-      setDisplayedText((currentText) => {
-        return currentText === text ? text : text[index] ? currentText + text[index] : text;
-      });
-      setIndex((index) => index + 1);
+      if (state.displayedText !== text && state.index < text.length) {
+        dispatch({ type: "text/write", payload: text[state.index] });
+      }
     }, speed);
 
     return () => clearInterval(interval);
-  }, [text, speed, index]);
+  }, [text, speed, state.index, state.displayedText]);
 
-  return { displayedText };
+  return { displayedText: state.displayedText };
 }

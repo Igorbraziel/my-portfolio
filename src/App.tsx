@@ -4,7 +4,6 @@ import { DarkModeProvider } from "./context/DarkModeContext";
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ProjectPage from "./pages/ProjectPage";
@@ -20,7 +19,6 @@ function App() {
           <Route element={<AppLayout />}>
             <Route index element={<Navigate to="/homepage" />} />
             <Route path="homepage" element={<HomePage />} />
-            <Route path="about" element={<AboutPage />} />
             <Route path="education" element={<EducationPage />} />
             <Route path="skills" element={<SkillsPage />} />
             <Route path="projects">

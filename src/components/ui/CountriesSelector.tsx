@@ -1,33 +1,36 @@
-import React, { useState, type Dispatch, type SetStateAction } from "react";
+import React, { useState } from "react";
 
 type Country = {
   name: string;
   code: string;
+  emoji: string;
 };
 
 interface CountriesSelectorProps {
   countries: Country[];
   flagSize?: "small" | "medium" | "large";
-  setSelectedValue?: Dispatch<SetStateAction<string>>;
+  setSelectedValue?: (arg0: string) => void;
+  defaultCountryCode?: string;
 }
 
 export default function CountriesSelector({
   countries,
   flagSize = "small",
   setSelectedValue = () => {},
+  defaultCountryCode = "en",
 }: CountriesSelectorProps) {
-  let dimensions: { width: number; height: number };
-  const [value, setValue] = useState(countries.at(0)?.code);
+  let dimensions = "";
+  const [value, setValue] = useState(defaultCountryCode);
 
   switch (flagSize) {
     case "small":
-      dimensions = { width: 16, height: 12 };
+      dimensions = "text-sm";
       break;
     case "medium":
-      dimensions = { width: 24, height: 18 };
+      dimensions = "text-base";
       break;
     case "large":
-      dimensions = { width: 32, height: 24 };
+      dimensions = "text-lg";
       break;
     default:
       throw new Error("flagSize must to be 'small' or 'medium' or 'large'");
@@ -39,15 +42,18 @@ export default function CountriesSelector({
   }
 
   return (
-    <select defaultValue={value} value={value} onChange={handleChange}>
-      {countries.map((country) => (
-        <option value={country.code}>
-          <img
-            src={`https://flagcdn.com/${dimensions.width}x${dimensions.height}/${country.code}.png`}
-            width={dimensions.width}
-            height={dimensions.height}
-            alt={country.name}
-          ></img>
+    <select
+      value={value}
+      onChange={handleChange}
+      className="rounded-md border border-stone-900 px-1 py-2"
+    >
+      {countries.map((country, index) => (
+        <option
+          value={country.code}
+          key={index}
+          className={`${dimensions} text-black`}
+        >
+          {country.emoji} {country.name}
         </option>
       ))}
     </select>

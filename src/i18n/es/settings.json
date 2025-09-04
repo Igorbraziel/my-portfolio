@@ -1,0 +1,11 @@
+{
+  "uploadButtonText": "Descargar CV",
+  "viewButtonText": "Ver CV",
+  "message404": "Página no encontrada",
+  "backButtonText": "Volver",
+  "about": "Acerca de mí",
+  "footer": {
+    "kindText": "Hecho con ❤️ en", 
+    "copyrightMessage": "Todos los derechos reservados"
+  }
+}
