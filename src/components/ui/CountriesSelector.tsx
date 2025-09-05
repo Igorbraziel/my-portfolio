@@ -1,4 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import {
+  Listbox,
+  ListboxButton,
+  ListboxOption,
+  ListboxOptions,
+} from "@headlessui/react";
+
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { AnimatePresence, motion } from "motion/react";
 
 type Country = {
   name: string;
@@ -21,6 +30,9 @@ export default function CountriesSelector({
 }: CountriesSelectorProps) {
   let dimensions = "";
   const [value, setValue] = useState(defaultCountryCode);
+  const currentCountry = countries
+    .filter((country) => country.code === value)
+    .at(0);
 
   switch (flagSize) {
     case "small":
@@ -36,26 +48,57 @@ export default function CountriesSelector({
       throw new Error("flagSize must to be 'small' or 'medium' or 'large'");
   }
 
-  function handleChange(e: React.ChangeEvent<HTMLSelectElement>) {
-    setValue(e.target.value);
-    setSelectedValue(e.target.value);
+  function handleChange(value: string) {
+    setValue(value);
+    setSelectedValue(value);
   }
 
   return (
-    <select
-      value={value}
-      onChange={handleChange}
-      className="rounded-md border border-stone-900 px-1 py-2"
-    >
-      {countries.map((country, index) => (
-        <option
-          value={country.code}
-          key={index}
-          className={`${dimensions} text-black border border-b-2 border-black`}
-        >
-          {country.emoji} {country.name}
-        </option>
-      ))}
-    </select>
+    <div className={`flex justify-center ${dimensions}`}>
+      <Listbox value={value} onChange={handleChange}>
+        {({ open }) => (
+          <div className="relative flex flex-col items-center">
+            <ListboxButton className="flex text-sm  md:text-base xl:text-xl lg:text-lg items-center justify-between rounded-sm border-2 border-indigo-950 dark:border-indigo-300 px-2 py-1 cursor-pointer bg-indigo-300 dark:bg-indigo-950">
+              <div className="flex gap-2 font-medium">
+                <span>{currentCountry?.emoji}</span> {currentCountry?.name}
+              </div>
+              <ExpandMoreIcon
+                className={`ml-2 text-blue-900 dark:text-blue-200 transition-transform ${
+                  open ? "rotate-180" : ""
+                }`}
+              />
+            </ListboxButton>
+
+            <AnimatePresence>
+              {open && (
+                <motion.div
+                  initial={{ opacity: 0, y: -8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -8 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute mt-10 lg:mt-11 w-full min-w-35 md:min-w-38 xl:min-w-45 rounded-xl border dark:border-slate-300 border-slate-700 bg-slate-50 dark:bg-slate-900 px-2 py-1 shadow-xl shadow-slate-800 dark:shadow-sm dark:shadow-slate-100"
+                >
+                  <ListboxOptions className="divide-y-2 divide-slate-700 dark:divide-slate-200 overflow-auto rounded-xl whitespace-nowrap text-xs md:text-sm lg:text-base xl:text-lg">
+                    {countries.map((country, index) => (
+                      <ListboxOption
+                        key={index}
+                        value={country.code}
+                        className={({ focus, selected }) =>
+                          `relative cursor-pointer ${focus ? "text-slate-950 dark:text-slate-50" : "text-slate-800 dark:text-slate-100"} ${selected ? "font-bold" : "font-medium"}`
+                        }
+                      >
+                        <div className="flex items-center gap-2.5 px-0.5 py-1">
+                          {country.emoji} <span>{country.name}</span>
+                        </div>
+                      </ListboxOption>
+                    ))}
+                  </ListboxOptions>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        )}
+      </Listbox>
+    </div>
   );
 }
