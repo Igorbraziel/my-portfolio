@@ -9,7 +9,7 @@ export default function RoundedPicture({ src, alt }: RoundedPictureProps) {
       <img
         src={src}
         alt={alt}
-        className="shadow-md dark:shadow-slate-100 dark:shadow-sm shadow-stone-900 h-full w-full rounded-full object-cover"
+        className="h-full w-full rounded-full object-cover shadow-md shadow-stone-900 dark:shadow-sm dark:shadow-slate-100"
       />
     </div>
   );

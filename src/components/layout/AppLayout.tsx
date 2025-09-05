@@ -1,10 +1,10 @@
-import Snowfall from "../ui/Snowfall";
 import Footer from "./Footer";
 import { Outlet } from "react-router";
 import Header from "./Header";
 import { useDarkMode } from "../../hooks/useDarkMode";
 import { CosmicBackground } from "../ui/CosmicBackground";
 import useCountryCode from "../../hooks/useCountryCode";
+import GradientBackground from "../ui/GradientBackground";
 
 export default function AppLayout() {
   const { isDark } = useDarkMode();
@@ -13,7 +13,7 @@ export default function AppLayout() {
   return (
     <div className="flex flex-col relative z-0 min-h-screen bg-slate-100 text-neutral-900 dark:bg-slate-900 dark:text-neutral-100">
       <Header />
-      {isDark ? <CosmicBackground /> : <Snowfall />}
+      {isDark ? <CosmicBackground /> : <GradientBackground />}
       <Outlet />
       <Footer countryCode={countryCode} setCountryCode={switchLanguage}/>
     </div>

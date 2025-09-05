@@ -51,7 +51,7 @@ export default function CountriesSelector({
         <option
           value={country.code}
           key={index}
-          className={`${dimensions} text-black`}
+          className={`${dimensions} text-black border border-b-2 border-black`}
         >
           {country.emoji} {country.name}
         </option>
