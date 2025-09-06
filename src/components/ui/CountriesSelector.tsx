@@ -58,12 +58,12 @@ export default function CountriesSelector({
       <Listbox value={value} onChange={handleChange}>
         {({ open }) => (
           <div className="relative flex flex-col items-center">
-            <ListboxButton className="flex text-sm  md:text-base xl:text-xl lg:text-lg items-center justify-between rounded-sm border-2 border-indigo-950 dark:border-indigo-300 px-2 py-1 cursor-pointer bg-indigo-300 dark:bg-indigo-950">
+            <ListboxButton className="flex cursor-pointer items-center justify-between rounded-sm border-2 border-indigo-950 bg-indigo-300 px-2 py-1 text-sm hover:bg-indigo-200 md:text-base lg:text-lg xl:text-xl dark:border-indigo-300 dark:bg-indigo-950 dark:hover:bg-blue-950">
               <div className="flex gap-2 font-medium">
                 <span>{currentCountry?.emoji}</span> {currentCountry?.name}
               </div>
               <ExpandMoreIcon
-                className={`ml-2 text-blue-900 dark:text-blue-200 transition-transform ${
+                className={`ml-2 text-blue-900 transition-transform dark:text-blue-200 ${
                   open ? "rotate-180" : ""
                 }`}
               />
@@ -76,18 +76,18 @@ export default function CountriesSelector({
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute mt-10 lg:mt-11 w-full min-w-35 md:min-w-38 xl:min-w-45 rounded-xl border dark:border-slate-300 border-slate-700 bg-slate-50 dark:bg-slate-900 px-2 py-1 shadow-xl shadow-slate-800 dark:shadow-sm dark:shadow-slate-100"
+                  className="absolute mt-10 w-full min-w-35 rounded-xl border border-slate-700 bg-slate-50 px-2 py-1 shadow-xl shadow-slate-800 md:min-w-38 lg:mt-11 xl:min-w-45 dark:border-slate-300 dark:bg-slate-900 dark:shadow-sm dark:shadow-slate-100"
                 >
-                  <ListboxOptions className="divide-y-2 divide-slate-700 dark:divide-slate-200 overflow-auto rounded-xl whitespace-nowrap text-xs md:text-sm lg:text-base xl:text-lg">
+                  <ListboxOptions className="divide-y-2 divide-slate-700 overflow-auto rounded-xl text-xs whitespace-nowrap md:text-sm lg:text-base xl:text-lg dark:divide-slate-200">
                     {countries.map((country, index) => (
                       <ListboxOption
                         key={index}
                         value={country.code}
                         className={({ focus, selected }) =>
-                          `relative cursor-pointer ${focus ? "text-slate-950 dark:text-slate-50" : "text-slate-800 dark:text-slate-100"} ${selected ? "font-bold" : "font-medium"}`
+                          `relative cursor-pointer ${focus ? "dark:bg-slate-700 bg-slate-300 text-slate-950 dark:text-slate-50" : "text-slate-800 dark:text-slate-100"} ${selected ? "font-bold" : "font-medium"}`
                         }
                       >
-                        <div className="flex items-center gap-2.5 px-0.5 py-1">
+                        <div className="flex items-center gap-2.5 px-0.5 md:px-1 lg:px-1.5 py-1">
                           {country.emoji} <span>{country.name}</span>
                         </div>
                       </ListboxOption>

@@ -7,29 +7,6 @@
     "Engenheiro de Software"
   ],
   "address": "Brasil",
-  "media": [
-    {
-      "name": "LinkedIn",
-      "profileURL": "https://www.linkedin.com/in/igor-reis-braziel-499b00300/",
-      "mediaIcon": "linkedin.png",
-      "bgColor": "bg-blue-700",
-      "textColor": "text-blue-50"
-    },
-    {
-      "name": "GitHub",
-      "profileURL": "https://github.com/Igorbraziel",
-      "mediaIcon": "github.png",
-      "bgColor": "bg-stone-800",
-      "textColor": "text-stone-50"
-    },
-    {
-      "name": "Instagram",
-      "profileURL": "https://www.instagram.com/igor_reis04/",
-      "mediaIcon": "instagram.png",
-      "bgColor": "bg-rose-600",
-      "textColor": "text-rose-50"
-    }
-  ],
   "shortResume": "Eu construo aplicações web modernas e intuitivas usando Next.js, React, Django, Spring Boot e muito mais. Também possuo conhecimento em Ciência de Dados e Aprendizado de Máquina usando Python. Sou um profissional competente que está sempre trabalhando em projetos e aprimorando minhas habilidades.",
   "about": "Sou Igor, estudante de Ciência da Computação na Universidade Federal de Goiás (desde 2023), apaixonado por tecnologia, resolução de problemas e aprendizado contínuo. Prospero em ambientes colaborativos, onde o trabalho em equipe e o compartilhamento de ideias levam a resultados mais sólidos, e me adapto rapidamente a novas ferramentas, desafios e oportunidades. Com determinação, foco e dedicação, busco me tornar um profissional que construa soluções significativas e contribua positivamente para cada equipe da qual faço parte."
 }
