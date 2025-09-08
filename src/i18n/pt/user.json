@@ -8,5 +8,33 @@
   ],
   "address": "Brasil",
   "shortResume": "Eu construo aplicações web modernas e intuitivas usando Next.js, React, Django, Spring Boot e muito mais. Também possuo conhecimento em Ciência de Dados e Aprendizado de Máquina usando Python. Sou um profissional competente que está sempre trabalhando em projetos e aprimorando minhas habilidades.",
-  "about": "Sou Igor, estudante de Ciência da Computação na Universidade Federal de Goiás (desde 2023), apaixonado por tecnologia, resolução de problemas e aprendizado contínuo. Prospero em ambientes colaborativos, onde o trabalho em equipe e o compartilhamento de ideias levam a resultados mais sólidos, e me adapto rapidamente a novas ferramentas, desafios e oportunidades. Com determinação, foco e dedicação, busco me tornar um profissional que construa soluções significativas e contribua positivamente para cada equipe da qual faço parte."
+  "about": "Sou Igor, estudante de Ciência da Computação na Universidade Federal de Goiás (desde 2023), apaixonado por tecnologia, resolução de problemas e aprendizado contínuo. Prospero em ambientes colaborativos, onde o trabalho em equipe e o compartilhamento de ideias levam a resultados mais sólidos, e me adapto rapidamente a novas ferramentas, desafios e oportunidades. Com determinação, foco e dedicação, busco me tornar um profissional que construa soluções significativas e contribua positivamente para cada equipe da qual faço parte.",
+  "graduation": {
+    "undergraduateCourse": "Ciência da Computação",
+    "university": "Universidade Federal de Goiás",
+    "institute": "Instituto de Informática",
+    "status": "Cursando",
+    "description": "Formação profissional em desenvolvimento ciêntífico e tecnológico por meio do avanço e da aplicação da computação",
+    "mainPurposes": [
+      "Desenvolver Habilidades em Resolução de Problemas",
+      "Entendimento de Fundamentos Teóricos da Computação",
+      "Desenvolver Habilidades em Programação e Desenvolvimento de Software",
+      "Aprender sobre Sistemas e Arquiteturas de Computadores",
+      "Explorar Inteligência Artificial (IA) e Áreas Emergentes"
+    ],
+    "dates": {
+      "startDate": 2023,
+      "endDate": 2027
+    },
+    "tags": [
+      "Desenvolvimento de Software",
+      "Padrões de Projeto",
+      "Sistemas Operacionais",
+      "Arquitetura de Computadores",
+      "Inteligência Artificial",
+      "Ciência de Dados",
+      "Algoritmos e Estrutura de Dados",
+      "Bases de Dados"
+    ]
+  }
 }

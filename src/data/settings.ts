@@ -10,6 +10,7 @@ export function useSettingsData() {
     backButtonText: t("backButtonText"),
     about: t("about"),
     footer: t("footer", { returnObjects: true }) as Footer,
+    educationLabel: t("educationLabel"),
   };
 }
 

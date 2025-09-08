@@ -1,7 +1,40 @@
 {
   "name": "Igor Reis Braziel",
-  "subtitles": ["Desarrollador Full Stack", "Estudiante de Informática", "Científico de Datos", "Ingeniero de Software"],
+  "subtitles": [
+    "Desarrollador Full Stack",
+    "Estudiante de Informática",
+    "Científico de Datos",
+    "Ingeniero de Software"
+  ],
   "address": "Brasil",
   "shortResume": "Desarrollo aplicaciones web modernas e intuitivas con Next.js, React, Django, Spring Boot y más. También tengo conocimientos de ciencia de datos y aprendizaje automático con Python. Soy un profesional competente que trabaja constantemente en proyectos y mejora sus habilidades.",
-  "about": "Soy Igor, estudiante de Informática en la Universidad Federal de Goiás (desde 2023), apasionado por la tecnología, la resolución de problemas y el aprendizaje continuo. Me desenvuelvo en entornos colaborativos, donde el trabajo en equipo y el intercambio de ideas generan mejores resultados, y me adapto rápidamente a nuevas herramientas, desafíos y oportunidades. Con determinación, enfoque y dedicación, aspiro a convertirme en un profesional que cree soluciones significativas y contribuya positivamente a cada equipo al que me uno."
+  "about": "Soy Igor, estudiante de Informática en la Universidad Federal de Goiás (desde 2023), apasionado por la tecnología, la resolución de problemas y el aprendizaje continuo. Me desenvuelvo en entornos colaborativos, donde el trabajo en equipo y el intercambio de ideas generan mejores resultados, y me adapto rápidamente a nuevas herramientas, desafíos y oportunidades. Con determinación, enfoque y dedicación, aspiro a convertirme en un profesional que cree soluciones significativas y contribuya positivamente a cada equipo al que me uno.",
+  "graduation": {
+    "undergraduateCourse": "Ciencias de la Computación",
+    "university": "Universidad Federal de Goiás",
+    "institute": "Instituto de Informática",
+    "status": "Estudiando",
+    "description": "Formación profesional en el desarrollo científico y tecnológico mediante el avance y aplicación de las tecnologías de la información",
+    "mainPurposes": [
+      "Desarrollar Habilidades de Resolución de Problemas",
+      "Comprender los Fundamentos Teóricos de la Informática",
+      "Desarrollar Habilidades de Programación y Desarrollo de Software",
+      "Aprender sobre Sistemas Informáticos y Arquitectura",
+      "Explorar la Inteligencia Artificial (IA) y Áreas Emergentes"
+    ],
+    "dates": {
+      "startDate": 2023,
+      "endDate": 2027
+    },
+    "tags": [
+      "Desarrollo de Software",
+      "Patrones de Diseño",
+      "Sistemas Operativos",
+      "Arquitectura de Computadores",
+      "Inteligencia Artificial",
+      "Ciencia de Datos",
+      "Estructura de Datos y Algoritmos",
+      "Bases de Datos"
+    ]
+  }
 }

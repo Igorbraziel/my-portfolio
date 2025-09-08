@@ -8,5 +8,33 @@
   ],
   "address": "Brazil",
   "shortResume": "I build modern and intuitive web applications using Next.js, React, Django, Spring Boot and more. I also have knowledge in Data Science and Machine Learning using Python. I'm a competent professional who is always working on projects and improving my skills.",
-  "about": "I’m Igor, a Computer Science student at the Federal University of Goiás (since 2023) with a passion for technology, problem-solving, and continuous learning. I thrive in collaborative environments, where teamwork and shared ideas lead to stronger results, and I adapt quickly to new tools, challenges, and opportunities. With determination, focus, and dedication, I aim to grow into a professional who builds meaningful solutions and contributes positively to every team I join."
+  "about": "I’m Igor, a Computer Science student at the Federal University of Goiás (since 2023) with a passion for technology, problem-solving, and continuous learning. I thrive in collaborative environments, where teamwork and shared ideas lead to stronger results, and I adapt quickly to new tools, challenges, and opportunities. With determination, focus, and dedication, I aim to grow into a professional who builds meaningful solutions and contributes positively to every team I join.",
+  "graduation": {
+    "undergraduateCourse": "Computer Science",
+    "university": "Federal University of Goiás",
+    "institute": "Institute of Informatics",
+    "status": "Studying",
+    "description": "Professional training in scientific and technological development through advancement and application of the computing",
+    "mainPurposes": [
+      "Develop Problem-Solving Skills",
+      "Understand Computing Theoretical Foundations",
+      "Develop Programming and Software Development Skills",
+      "Learn About Computer Systems and Architecture",
+      "Explore Artificial Intelligence (AI) and Emerging Areas"
+    ],
+    "dates": {
+      "startDate": 2023,
+      "endDate": 2027
+    },
+    "tags": [
+      "Software Development",
+      "Design Patterns",
+      "Operating Systems",
+      "Computer Architecture",
+      "Artificial Intelligence",
+      "Data Science",
+      "Data Structure and Algorithms",
+      "Databases"
+    ]
+  }
 }
