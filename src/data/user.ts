@@ -31,6 +31,54 @@ const media = [
   },
 ];
 
+const certificates = [
+  {
+    company: "Udemy",
+    course: "The Ultimate React Course 2025",
+    duration: 84,
+    url: "https://www.udemy.com/certificate/UC-27fce06e-26f3-4a28-88ab-b21d3f650a30/",
+    technologies: ["React.js", "Next.js", "Tailwind CSS", "Auth.js"],
+    year: 2025,
+  },
+  {
+    company: "Udemy",
+    course: "Curso de Python 3 do básico ao avançado",
+    duration: 141,
+    url: "https://www.udemy.com/certificate/UC-773e9cf6-c16d-4be8-aaea-242a1de0ccfe/",
+    technologies: ["Python", "Django", "SQL", "MySQL"],
+    year: 2025,
+  },
+  {
+    company: "Udemy",
+    course: "Machine Learning e Data Science com Python de A a Z",
+    duration: 41.5,
+    url: "https://www.udemy.com/certificate/UC-a74bd47c-e637-4832-a284-1245cfa44451/",
+    technologies: [
+      "Machine Learning",
+      "Data Science",
+      "Python",
+      "Jupyter Notebook",
+    ],
+    year: 2025,
+  },
+  {
+    company: "Udemy",
+    course: "Java COMPLETO Programação Orientada a Objetos",
+    duration: 54.5,
+    url: "https://www.udemy.com/certificate/UC-715ef69d-f704-4437-a1b7-53718f02c23a/",
+    technologies: ["Java", "Spring Boot", "MongoDB", "Postman"],
+    year: 2025,
+  },
+  {
+    company: "Udemy",
+    course: "Java COMPLETO Programação Orientada a Objetos",
+    duration: 54.5,
+    url: "https://www.udemy.com/certificate/UC-715ef69d-f704-4437-a1b7-53718f02c23a/",
+    technologies: ["Java", "Spring Boot", "MongoDB", "Postman"],
+    year: 2025,
+  },
+];
+
 export function useUserData() {
   const { t } = useTranslation("user");
 
@@ -42,8 +90,18 @@ export function useUserData() {
     shortResume: t("shortResume"),
     about: t("about"),
     graduation: t("graduation", { returnObjects: true }) as Graduation,
+    certificates,
   };
 }
+
+export type Certificate = {
+  company: string;
+  course: string;
+  duration: number;
+  url: string;
+  technologies: string[];
+  year: number;
+};
 
 export type Graduation = {
   undergraduateCourse: string;
