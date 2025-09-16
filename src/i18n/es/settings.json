@@ -8,5 +8,7 @@
     "kindText": "Hecho con ❤️ en", 
     "copyrightMessage": "Todos los derechos reservados"
   },
-  "educationLabel": "Formación Académica"
+  "educationLabel": "Formación Académica",
+  "durationText": "Duration",
+  "hoursText": "Hours"
 }

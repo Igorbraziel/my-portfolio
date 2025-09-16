@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import InstagramIcon from "../components/ui/icons/InstagramIcon";
 import GitHubIcon from "../components/ui/icons/GitHubIcon";
 import LinkedInIcon from "../components/ui/icons/LinkedInIcon";
+import UdemyIcon from "../components/ui/icons/UdemyIcon";
 
 const media = [
   {
@@ -34,7 +35,8 @@ const media = [
 const certificates = [
   {
     company: "Udemy",
-    course: "The Ultimate React Course 2025",
+    companyIcon: UdemyIcon,
+    course: "The Ultimate React Course",
     duration: 84,
     url: "https://www.udemy.com/certificate/UC-27fce06e-26f3-4a28-88ab-b21d3f650a30/",
     technologies: ["React.js", "Next.js", "Tailwind CSS", "Auth.js"],
@@ -42,15 +44,17 @@ const certificates = [
   },
   {
     company: "Udemy",
-    course: "Curso de Python 3 do básico ao avançado",
+    companyIcon: UdemyIcon,
+    course: "Python 3 | Django",
     duration: 141,
     url: "https://www.udemy.com/certificate/UC-773e9cf6-c16d-4be8-aaea-242a1de0ccfe/",
-    technologies: ["Python", "Django", "SQL", "MySQL"],
+    technologies: [{ techLabel: "Python", techIcon: }"Python", "Django", "SQL", "MySQL"],
     year: 2025,
   },
   {
     company: "Udemy",
-    course: "Machine Learning e Data Science com Python de A a Z",
+    companyIcon: UdemyIcon,
+    course: "Machine Learning & Data Science | Python",
     duration: 41.5,
     url: "https://www.udemy.com/certificate/UC-a74bd47c-e637-4832-a284-1245cfa44451/",
     technologies: [
@@ -63,15 +67,8 @@ const certificates = [
   },
   {
     company: "Udemy",
-    course: "Java COMPLETO Programação Orientada a Objetos",
-    duration: 54.5,
-    url: "https://www.udemy.com/certificate/UC-715ef69d-f704-4437-a1b7-53718f02c23a/",
-    technologies: ["Java", "Spring Boot", "MongoDB", "Postman"],
-    year: 2025,
-  },
-  {
-    company: "Udemy",
-    course: "Java COMPLETO Programação Orientada a Objetos",
+    companyIcon: UdemyIcon,
+    course: "Java | Spring Boot | POO",
     duration: 54.5,
     url: "https://www.udemy.com/certificate/UC-715ef69d-f704-4437-a1b7-53718f02c23a/",
     technologies: ["Java", "Spring Boot", "MongoDB", "Postman"],

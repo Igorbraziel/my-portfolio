@@ -1,8 +1,5 @@
 import React, { useCallback, useEffect } from "react";
-import {
-  motion,
-  useAnimationControls,
-} from "framer-motion";
+import { motion, useAnimationControls } from "motion/react";
 
 type InfiniteScrollListProps = {
   items: React.ReactNode[];
@@ -40,7 +37,7 @@ export default function InfiniteScrollList({
   }, [startAnimation]);
 
   return (
-    <div className={`flex overflow-hidden select-none`}>
+    <div className={`flex items-center overflow-hidden select-none`}>
       <motion.ul
         animate={controls}
         className={`xs:pr-2 flex min-w-full shrink-0 list-none items-center justify-between pr-1.5 sm:pr-2.5 lg:pr-3 ${gapStyle} ${unorderedListClassName}`}

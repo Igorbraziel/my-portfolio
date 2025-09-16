@@ -8,5 +8,7 @@
     "kindText": "Built with ❤️ in",
     "copyrightMessage": "All rights reserved"
   },
-  "educationLabel": "Academic Background"
+  "educationLabel": "Academic Background",
+  "durationText": "Duration",
+  "hoursText": "Hours"
 }

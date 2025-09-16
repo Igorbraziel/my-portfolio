@@ -11,6 +11,8 @@ export function useSettingsData() {
     about: t("about"),
     footer: t("footer", { returnObjects: true }) as Footer,
     educationLabel: t("educationLabel"),
+    durationText: t("durationText"),
+    hoursText: t("Hours"),
   };
 }
 
