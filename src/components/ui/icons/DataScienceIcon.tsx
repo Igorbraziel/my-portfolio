@@ -1,6 +1,6 @@
 import type React from "react";
 
-export default function DataScience(props: React.SVGProps<SVGSVGElement>) {
+export default function DataScienceIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="800px"

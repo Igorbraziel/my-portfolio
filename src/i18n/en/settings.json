@@ -10,5 +10,7 @@
   },
   "educationLabel": "Academic Background",
   "durationText": "Duration",
-  "hoursText": "Hours"
+  "hoursText": "Hours",
+  "technologiesText": "Technologies", 
+  "certificatesText": "Certificates"
 }

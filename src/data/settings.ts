@@ -13,6 +13,8 @@ export function useSettingsData() {
     educationLabel: t("educationLabel"),
     durationText: t("durationText"),
     hoursText: t("Hours"),
+    technologiesText: t("technologiesText"),
+    certificatesText: t("certificatesText"),
   };
 }
 

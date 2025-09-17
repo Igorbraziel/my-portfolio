@@ -4,6 +4,21 @@ import InstagramIcon from "../components/ui/icons/InstagramIcon";
 import GitHubIcon from "../components/ui/icons/GitHubIcon";
 import LinkedInIcon from "../components/ui/icons/LinkedInIcon";
 import UdemyIcon from "../components/ui/icons/UdemyIcon";
+import PythonIcon from "../components/ui/icons/PythonIcon";
+import DjangoIcon from "../components/ui/icons/DjangoIcon";
+import SQLIcon from "../components/ui/icons/SQLIcon";
+import MySQLIcon from "../components/ui/icons/MySQLIcon";
+import ReactIcon from "../components/ui/icons/ReactIcon";
+import NextIcon from "../components/ui/icons/NextIcon";
+import TailwindIcon from "../components/ui/icons/TailwindIcon";
+import AuthIcon from "../components/ui/icons/AuthIcon";
+import MachineLearningIcon from "../components/ui/icons/MachineLearningIcon";
+import DataScienceIcon from "../components/ui/icons/DataScienceIcon";
+import JupyterIcon from "../components/ui/icons/JupyterIcon";
+import MongoIcon from "../components/ui/icons/MongoIcon";
+import PostmanIcon from "../components/ui/icons/PostmanIcon";
+import SpringIcon from "../components/ui/icons/SpringIcon";
+import JavaIcon from "../components/ui/icons/JavaIcon";
 
 const media = [
   {
@@ -39,16 +54,26 @@ const certificates = [
     course: "The Ultimate React Course",
     duration: 84,
     url: "https://www.udemy.com/certificate/UC-27fce06e-26f3-4a28-88ab-b21d3f650a30/",
-    technologies: ["React.js", "Next.js", "Tailwind CSS", "Auth.js"],
+    technologies: [
+      { techLabel: "React.js", techIcon: ReactIcon },
+      { techLabel: "Next.js", techIcon: NextIcon },
+      { techLabel: "Tailwind CSS", techIcon: TailwindIcon },
+      { techLabel: "Auth.js", techIcon: AuthIcon },
+    ],
     year: 2025,
   },
   {
     company: "Udemy",
     companyIcon: UdemyIcon,
-    course: "Python 3 | Django",
+    course: "Python 3 | Django | Design Patterns",
     duration: 141,
     url: "https://www.udemy.com/certificate/UC-773e9cf6-c16d-4be8-aaea-242a1de0ccfe/",
-    technologies: [{ techLabel: "Python", techIcon: }"Python", "Django", "SQL", "MySQL"],
+    technologies: [
+      { techLabel: "Python", techIcon: PythonIcon },
+      { techLabel: "Django", techIcon: DjangoIcon },
+      { techLabel: "SQL", techIcon: SQLIcon },
+      { techLabel: "MySQL", techIcon: MySQLIcon },
+    ],
     year: 2025,
   },
   {
@@ -58,10 +83,10 @@ const certificates = [
     duration: 41.5,
     url: "https://www.udemy.com/certificate/UC-a74bd47c-e637-4832-a284-1245cfa44451/",
     technologies: [
-      "Machine Learning",
-      "Data Science",
-      "Python",
-      "Jupyter Notebook",
+      { techLabel: "Machine Learning", techIcon: MachineLearningIcon },
+      { techLabel: "Data Science", techIcon: DataScienceIcon },
+      { techLabel: "Python", techIcon: PythonIcon },
+      { techLabel: "Jupyter Notebook", techIcon: JupyterIcon },
     ],
     year: 2025,
   },
@@ -71,7 +96,12 @@ const certificates = [
     course: "Java | Spring Boot | POO",
     duration: 54.5,
     url: "https://www.udemy.com/certificate/UC-715ef69d-f704-4437-a1b7-53718f02c23a/",
-    technologies: ["Java", "Spring Boot", "MongoDB", "Postman"],
+    technologies: [
+      { techLabel: "Java", techIcon: JavaIcon },
+      { techLabel: "Spring Boot", techIcon: SpringIcon },
+      { techLabel: "MongoDB", techIcon: MongoIcon },
+      { techLabel: "Postman", techIcon: PostmanIcon },
+    ],
     year: 2025,
   },
 ];

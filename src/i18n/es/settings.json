@@ -9,6 +9,8 @@
     "copyrightMessage": "Todos los derechos reservados"
   },
   "educationLabel": "Formación Académica",
-  "durationText": "Duration",
-  "hoursText": "Hours"
+  "durationText": "Duración",
+  "hoursText": "Hours", 
+  "technologiesText": "Tecnologías", 
+  "certificatesText": "Certificados"
 }
