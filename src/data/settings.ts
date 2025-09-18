@@ -12,7 +12,7 @@ export function useSettingsData() {
     footer: t("footer", { returnObjects: true }) as Footer,
     educationLabel: t("educationLabel"),
     durationText: t("durationText"),
-    hoursText: t("Hours"),
+    hoursText: t("hoursText"),
     technologiesText: t("technologiesText"),
     certificatesText: t("certificatesText"),
   };

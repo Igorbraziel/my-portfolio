@@ -14,21 +14,28 @@ import enSettings from "./i18n/en/settings.json";
 import esSettings from "./i18n/es/settings.json";
 import ptSettings from "./i18n/pt/settings.json";
 
+import enSkills from "./i18n/en/skills.json";
+import esSkills from "./i18n/es/skills.json";
+import ptSkills from "./i18n/pt/skills.json";
+
 const resources = {
   en: {
     user: enUser,
     links: enLinks,
     settings: enSettings,
+    skills: enSkills,
   },
   es: {
     user: esUser,
     links: esLinks,
     settings: esSettings,
+    skills: esSkills,
   },
   pt: {
     user: ptUser,
     links: ptLinks,
     settings: ptSettings,
+    skills: ptSkills,
   },
 };
 

@@ -11,7 +11,7 @@ export default function CertificatesList() {
   const settings = useSettingsData();
 
   return (
-    <ul className="mb-3 grid auto-rows-fr grid-cols-1 items-stretch gap-8 sm:grid-cols-2">
+    <ul className="my-2 grid auto-rows-fr grid-cols-1 items-stretch gap-8 sm:grid-cols-2">
       {certificates.map((certificate, index) => (
         <motion.a
           key={index}
@@ -22,7 +22,7 @@ export default function CertificatesList() {
         >
           <li
             key={index}
-            className="flex w-full h-full flex-col justify-between rounded-xl border-2 border-stone-800 bg-indigo-400/30 px-1.5 py-1 md:px-1 dark:border-stone-200 dark:bg-blue-950/50"
+            className="flex h-full w-full flex-col justify-between rounded-xl border-2 border-stone-800 bg-indigo-400/30 px-1.5 py-1 md:px-1 dark:border-stone-200 dark:bg-blue-950/50"
           >
             <div className="mx-2 my-2 flex justify-between">
               <div className="xs:w-[70%] flex w-[80%] flex-col sm:w-[90%]">
@@ -30,7 +30,7 @@ export default function CertificatesList() {
                   <h2 className="font-title text-sm font-bold md:text-base lg:text-lg">
                     {certificate.course}
                   </h2>
-                  <span className="flex gap-1 items-center sm:mt-1 mb-1 md:mb-3 ml-0.5 text-[10px] font-[350] tracking-wide md:text-xs lg:text-sm">
+                  <span className="mb-1 ml-0.5 flex items-center gap-1 text-[10px] font-[350] tracking-wide sm:mt-1 md:mb-3 md:text-xs lg:text-sm">
                     <AccessTimeIcon fontSize="small" /> {settings.durationText}:{" "}
                     {certificate.duration} {settings.hoursText}
                   </span>
@@ -40,7 +40,8 @@ export default function CertificatesList() {
                 </h3>
                 <ul className="mb-2 grid grid-cols-2 gap-x-6 gap-y-4 lg:ml-2">
                   {certificate.technologies.map((tech, index) => (
-                    <li
+                    <motion.li
+                      whileHover={{ scale: 1.05 }}
                       key={index}
                       className="xs:w-[80%] flex flex-col items-center justify-center gap-0.5 rounded-sm border bg-violet-100/50 py-2 sm:w-full sm:px-1 md:gap-1 lg:w-[90%] lg:gap-1.5 xl:w-[80%] dark:bg-stone-200/30"
                     >
@@ -50,7 +51,7 @@ export default function CertificatesList() {
                       <span className="text-[9px] font-bold sm:text-[7px] md:text-[10px] lg:text-xs">
                         {tech.techLabel}
                       </span>
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
               </div>

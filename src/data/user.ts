@@ -74,7 +74,7 @@ const certificates = [
       { techLabel: "SQL", techIcon: SQLIcon },
       { techLabel: "MySQL", techIcon: MySQLIcon },
     ],
-    year: 2025,
+    year: 2024,
   },
   {
     company: "Udemy",
@@ -102,7 +102,7 @@ const certificates = [
       { techLabel: "MongoDB", techIcon: MongoIcon },
       { techLabel: "Postman", techIcon: PostmanIcon },
     ],
-    year: 2025,
+    year: 2024,
   },
 ];
 

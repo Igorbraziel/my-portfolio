@@ -10,10 +10,7 @@ interface DarkModeObject {
 const DarkModeContext = createContext<null | DarkModeObject>(null);
 
 function DarkModeProvider({ children }: PropsWithChildren) {
-  const isDarkLocalState = useLocalStorageState(
-    window.matchMedia("prefers-color-scheme: dark").matches,
-    "isDark",
-  );
+  const isDarkLocalState = useLocalStorageState(true, "isDark");
   const [isDark, setIsDark] = [
     isDarkLocalState.at(0) as boolean,
     isDarkLocalState.at(1) as Dispatch<unknown>,
