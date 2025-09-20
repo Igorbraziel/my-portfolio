@@ -6,7 +6,7 @@ import ArrowBackSharpIcon from "@mui/icons-material/ArrowBackSharp";
 
 export default function PageNotFound() {
   const navigate = useNavigate();
-  const settings = useSettingsData();
+  const { settings } = useSettingsData();
 
   return (
     <MainContainer>

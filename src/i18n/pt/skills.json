@@ -1,3 +1,7 @@
 {
-  "skillsText": "Habilidades"
+  "skillsLabels": {
+    "skillsText": "Habilidades",
+    "coreCompetenciesText": "Competências Essenciais",
+    "competenciesResume": "Meus domínios de conhecimento na Computação são Desenvolvimento Back-end, Desenvolvimento Front-end, Cloud Computing, DevOps, Machine Learning e Banco de Dados"
+  } 
 }

@@ -5,140 +5,22 @@ export default function DataScienceIcon(props: React.SVGProps<SVGSVGElement>) {
     <svg
       width="800px"
       height="800px"
-      viewBox="0 0 48 48"
+      viewBox="-1.8 0 63.929 63.929"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <rect
-        x="1"
-        y="1"
-        width="46"
-        height="46"
-        rx="4"
-        ry="4"
-        transform="translate(48 48) rotate(180)"
-        fill="none"
-        stroke="#1d1d1b"
-        strokeWidth="2"
-        strokeLinejoin="round"
-      />
-      <rect
-        x="4"
-        y="22"
-        width="7"
-        height="22"
-        fill="none"
-        stroke="#1d1d1b"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <rect
-        x="15"
-        y="28"
-        width="7"
-        height="16"
-        fill="none"
-        stroke="#1d1d1b"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <rect
-        x="26"
-        y="19"
-        width="7"
-        height="25"
-        fill="none"
-        stroke="#1d1d1b"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <rect
-        x="37"
-        y="23"
-        width="7"
-        height="21"
-        fill="none"
-        stroke="#1d1d1b"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <circle
-        cx="7"
-        cy="14"
-        r="2"
-        fill="none"
-        stroke="#1d1d1b"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <circle
-        cx="19"
-        cy="20"
-        r="2"
-        fill="none"
-        stroke="#1d1d1b"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <circle
-        cx="30"
-        cy="11"
-        r="2"
-        fill="none"
-        stroke="#1d1d1b"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <circle
-        cx="41"
-        cy="15"
-        r="2"
-        fill="none"
-        stroke="#1d1d1b"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <line
-        x1="9"
-        y1="15"
-        x2="17"
-        y2="19"
-        fill="none"
-        stroke="#1d1d1b"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <line
-        x1="21"
-        y1="19"
-        x2="28"
-        y2="12"
-        fill="none"
-        stroke="#1d1d1b"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <line
-        x1="32"
-        y1="12"
-        x2="39"
-        y2="14"
-        fill="none"
-        stroke="#1d1d1b"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <g color="#000000">
+        <path
+          d="m 238.91338,466.3526 0,7.32575 3.72011,0 0,10.81692 -18.19991,36.34258 5.60878,9.44335 7.32574,0 39.54762,0 2.17483,0 5.66601,-9.44335 -0.11447,0 -18.1999,-36.34258 0,-10.81692 3.60564,0 0,-7.32575 -31.13443,0 z m 11.16032,7.32575 9.04274,0 0,10.70246 -0.0571,0 4.75029,9.44335 -12.07604,0 -14.59427,29.13129 -4.17796,0 -1.20188,-2.06036 18.1999,-36.39982 0.11447,0 0,-10.81692 z"
+          fill="#00bcf2"
+          transform="translate(-224.434 -466.353)"
+        />
+        <path
+          d="m 250.08305,473.6931 0,10.8125 -0.125,0 -18.1875,36.40625 1.1875,2.0625 4.1875,0 14.59375,-29.125 12.0625,0 -4.75,-9.4375 0.0625,0 0,-10.71875 z"
+          fill="#ffffff"
+          transform="translate(-224.434 -466.353)"
+        />
+      </g>
     </svg>
   );
 }

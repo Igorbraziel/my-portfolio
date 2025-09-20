@@ -1,3 +1,7 @@
 {
-  "skillsText": "Skills"
+  "skillsLabels": {
+    "skillsText": "Skills",
+    "coreCompetenciesText": "Core Competencies",
+    "competenciesResume": "My domains of knowledge in Computing are Back-end Development, Front-end Development, Cloud Computing, DevOps, Machine Learning and Databases"
+  }
 }

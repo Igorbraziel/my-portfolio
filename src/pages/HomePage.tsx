@@ -14,7 +14,7 @@ import RoundedPicture from "../components/ui/RoundedPicture";
 export default function HomePage() {
   const user = useUserData();
   const links = useLinksData();
-  const settings = useSettingsData();
+  const { settings } = useSettingsData();
   const isTablet = useMediaQuery("(min-width: 768px)");
   const isLaptop = useMediaQuery("(min-width: 1024px)");
 

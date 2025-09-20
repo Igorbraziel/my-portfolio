@@ -1,16 +1,18 @@
 {
-  "uploadButtonText": "Download Resume",
-  "viewButtonText": "View Resume",
-  "message404": "Page Not Found",
-  "backButtonText": "Go Back",
-  "about": "About me",
-  "footer": {
-    "kindText": "Built with ❤️ in",
-    "copyrightMessage": "All rights reserved"
-  },
-  "educationLabel": "Academic Background",
-  "durationText": "Duration",
-  "hoursText": "Hours",
-  "technologiesText": "Technologies", 
-  "certificatesText": "Certificates"
+  "settings": {
+    "uploadButtonText": "Download Resume",
+    "viewButtonText": "View Resume",
+    "message404": "Page Not Found",
+    "backButtonText": "Go Back",
+    "about": "About me",
+    "footer": {
+      "kindText": "Built with ❤️ in",
+      "copyrightMessage": "All rights reserved"
+    },
+    "educationLabel": "Academic Background",
+    "durationText": "Duration",
+    "hoursText": "Hours",
+    "technologiesText": "Technologies",
+    "certificatesText": "Certificates"
+  }
 }

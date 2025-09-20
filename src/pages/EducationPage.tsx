@@ -8,7 +8,7 @@ import { useSettingsData } from "../data/settings";
 import { capitalize } from "../utils/capitalize";
 
 export default function EducationPage() {
-  const settings = useSettingsData();
+  const { settings } = useSettingsData();
   const links = useLinksData();
 
   return (

@@ -8,15 +8,15 @@ import { useSettingsData } from "../../data/settings";
 
 export default function CertificatesList() {
   const { certificates } = useUserData();
-  const settings = useSettingsData();
+  const { settings } = useSettingsData();
 
   return (
-    <ul className="my-2 grid auto-rows-fr grid-cols-1 items-stretch gap-8 sm:grid-cols-2">
+    <ul className="my-2 mb-4 grid auto-rows-fr grid-cols-1 items-stretch gap-8 sm:grid-cols-2">
       {certificates.map((certificate, index) => (
         <motion.a
           key={index}
           className="cursor-pointer"
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.02 }}
           href={certificate.url}
           target="_blank"
         >

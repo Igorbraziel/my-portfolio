@@ -1,16 +1,18 @@
 {
-  "uploadButtonText": "Baixar CV",
-  "viewButtonText": "Visualizar CV",
-  "message404": "Página não encontrada",
-  "backButtonText": "Voltar",
-  "about": "Sobre mim",
-  "footer": {
-    "kindText": "Feito com ❤️ no",
-    "copyrightMessage": "Todos os direitos reservados"
-  },
-  "educationLabel": "Formação Academica", 
-  "durationText": "Duração",
-  "hoursText": "Horas",
-  "technologiesText": "Tecnologias", 
-  "certificatesText": "Certificados"
+  "settings": {
+    "uploadButtonText": "Baixar CV",
+    "viewButtonText": "Visualizar CV",
+    "message404": "Página não encontrada",
+    "backButtonText": "Voltar",
+    "about": "Sobre mim",
+    "footer": {
+      "kindText": "Feito com ❤️ no",
+      "copyrightMessage": "Todos os direitos reservados"
+    },
+    "educationLabel": "Formação Academica",
+    "durationText": "Duração",
+    "hoursText": "Horas",
+    "technologiesText": "Tecnologias",
+    "certificatesText": "Certificados"
+  }
 }
