@@ -15,7 +15,7 @@ export default function SkillsPage() {
 
   return (
     <MainContainer>
-      <Title as="h2">{skillsLabels.skillsText}</Title>
+      <Title as="h1">{skillsLabels.skillsText}</Title>
       <InfiniteScrollList
         unorderedListClassName="py-2.5"
         listItemClassName="dark:bg-slate-600/20 rounded-sm border-2 dark:border-slate-300/40"
@@ -35,7 +35,7 @@ export default function SkillsPage() {
         ))}
         duration={50}
       />
-      <Title as="h3" className="!mt-8">
+      <Title as="h2" className="!mt-8">
         {skillsLabels.coreCompetenciesText}
       </Title>
       <Typewriter
