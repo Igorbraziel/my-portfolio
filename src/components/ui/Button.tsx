@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 interface ButtonProps {
   type: "confirm" | "warning" | "normal";
-  size: "small" | "medium" | "large" | "extra-large";
+  size: "small" | "medium" | "large" | "extra-large" | "extra-small";
   onClick?: () => void;
   children: React.ReactNode;
   extraClassNames?: string;
@@ -28,7 +28,7 @@ export default function Button({
       break;
     case "normal":
       typeStyle =
-        "bg-stone-900 text-stone-50 font-bold shadow-stone-900 border-stone-600 hover:bg-stone-800 dark:bg-stone-100 dark:shadow-stone-100 dark:border-stone-300 dark:hover:bg-stone-200 dark:text-stone-950";
+        "bg-stone-900 text-stone-50 font-bold shadow-stone-900 border-stone-600 hover:bg-stone-800 dark:bg-stone-300 dark:shadow-stone-100 dark:border-stone-300 dark:hover:bg-stone-400 dark:text-stone-950";
       break;
     default:
       throw new Error("Type must to be 'confirm' or 'warning' or 'normal'");
@@ -37,6 +37,10 @@ export default function Button({
   let sizeStyle;
 
   switch (size) {
+    case "extra-small":
+      sizeStyle =
+        "text-[10px] md:text-xs lg:text-sm px-1.5 py-1 sm:px-2 sm:py-1.5 md:py-2 lg:px-2.5";
+        break;
     case "small":
       sizeStyle =
         "text-sm md:text-sm lg:text-base px-1 py-1.5 sm:px-1.5 sm:py-2 md:p-2 lg:py-3";
@@ -61,7 +65,7 @@ export default function Button({
     <motion.button
       className={`${typeStyle} ${sizeStyle} cursor-pointer rounded-sm border-2 shadow ${extraClassNames}`}
       onClick={onClick}
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.96 }}
     >
       {children}

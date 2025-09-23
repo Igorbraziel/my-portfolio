@@ -3,8 +3,8 @@ import { motion } from "motion/react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
-import { useUserData } from "../../data/user";
-import { useSettingsData } from "../../data/settings";
+import { useUserData } from "../../../../data/user";
+import { useSettingsData } from "../../../../data/settings";
 
 export default function CertificatesList() {
   const { certificates } = useUserData();

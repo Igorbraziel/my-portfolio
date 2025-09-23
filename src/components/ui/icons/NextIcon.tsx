@@ -1,9 +1,12 @@
 import type React from "react";
+import { useDarkMode } from "../../../hooks/useDarkMode";
 
 export default function NextIcon(props: React.SVGProps<SVGSVGElement>) {
+  const {isDark} = useDarkMode();
+
   return (
     <svg
-      fill="#000000"
+      fill={isDark? "#FFFFFF" : "#000000"}
       width="800px"
       height="800px"
       viewBox="0 0 32 32"

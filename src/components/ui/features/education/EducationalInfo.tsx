@@ -1,7 +1,7 @@
-import type { Graduation } from "../../data/user";
-import InfiniteScrollList from "./InfiniteScrollLits";
+import type { Graduation } from "../../../../data/user";
+import InfiniteScrollList from "../../InfiniteScrollLits";
 import PurposesList from "./PurposesList";
-import Tag, { type TagProps } from "./Tag";
+import Tag, { type TagProps } from "../../Tag";
 import UndergraduateDescription from "./UndergraduateDescription";
 import UndergraduateInfo from "./UndergraduateInfo";
 

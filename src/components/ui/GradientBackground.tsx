@@ -3,9 +3,10 @@ import { motion } from "motion/react";
 const GradientBackground = () => {
   return (
     <motion.div
-      className="fixed inset-0 -z-10 top-0 left-0 h-screen w-screen"
+      className="fixed inset-0 top-0 left-0 -z-10 h-screen w-screen"
       style={{
-        background: "linear-gradient(135deg, oklch(89.9% 0.061 343.231), oklch(93.2% 0.032 255.585), oklch(93% 0.034 272.788), oklch(70.2% 0.183 293.541))",
+        background:
+          "linear-gradient(135deg, oklch(83.3% 0.145 321.434), oklch(92.9% 0.013 255.508),  oklch(60.6% 0.25 292.717))",
         backgroundSize: "100% 100%",
       }}
       animate={{

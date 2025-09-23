@@ -1,7 +1,7 @@
-import ScheduleIcon from '@mui/icons-material/Schedule';
+import ScheduleIcon from "@mui/icons-material/Schedule";
 
-import type { Graduation } from "../../data/user";
-import Tag from "./Tag";
+import type { Graduation } from "../../../../data/user";
+import Tag from "../../Tag";
 
 export default function UndergraduateInfo({
   graduation,
@@ -24,7 +24,8 @@ export default function UndergraduateInfo({
       </h4>
       <div className="mb-0.5 ml-1 flex items-center gap-0.5 py-1.5 text-xs font-light sm:mb-1.5 sm:gap-1 sm:py-1 sm:text-sm md:mt-0.5 lg:text-base">
         <span className="flex items-center gap-1 sm:gap-1.5">
-          <ScheduleIcon fontSize="small"/> {graduation.dates.startDate} - {graduation.dates.endDate}
+          <ScheduleIcon fontSize="small" /> {graduation.dates.startDate} -{" "}
+          {graduation.dates.endDate}
         </span>
         <Tag
           as="span"

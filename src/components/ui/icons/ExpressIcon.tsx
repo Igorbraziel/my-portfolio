@@ -1,6 +1,9 @@
 import type React from "react";
+import { useDarkMode } from "../../../hooks/useDarkMode";
 
 export default function ExpressIcon(props: React.SVGProps<SVGSVGElement>) {
+  const { isDark } = useDarkMode();
+
   return (
     <svg
       width="800px"
@@ -12,35 +15,35 @@ export default function ExpressIcon(props: React.SVGProps<SVGSVGElement>) {
       <path
         d="M28.777,14.416l4.9814,18.591"
         fill="none"
-        stroke="#000000"
+        stroke={!isDark ? "#000000" : "#FFFFFF"}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M39.248,14.416,23.287,33.007"
         fill="none"
-        stroke="#000000"
+        stroke={!isDark ? "#000000" : "#FFFFFF"}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M26.022,14.416H14.193"
         fill="none"
-        stroke="#000000"
+        stroke={!isDark ? "#000000" : "#FFFFFF"}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M23.038,23.711H11.209"
         fill="none"
-        stroke="#000000"
+        stroke={!isDark ? "#000000" : "#FFFFFF"}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M20.055,33.007H8.226"
         fill="none"
-        stroke="#000000"
+        stroke={!isDark ? "#000000" : "#FFFFFF"}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -49,7 +52,7 @@ export default function ExpressIcon(props: React.SVGProps<SVGSVGElement>) {
         cy="24"
         r="21.5"
         fill="none"
-        stroke="#000000"
+        stroke={!isDark ? "#000000" : "#FFFFFF"}
         strokeLinecap="round"
         strokeLinejoin="round"
       />

@@ -1,5 +1,5 @@
-import CertificatesList from "../components/ui/CertificatesList";
-import EducationalCard from "../components/ui/EducationalCard";
+import CertificatesList from "../components/ui/features/education/CertificatesList";
+import EducationalCard from "../components/ui/features/education/EducationalCard";
 import MainContainer from "../components/ui/MainContainer";
 import NextPageLink from "../components/ui/NextPageLink";
 import Title from "../components/ui/Title";
@@ -13,14 +13,10 @@ export default function EducationPage() {
 
   return (
     <MainContainer>
-      <Title as="h2">
-        {settings.educationLabel}
-      </Title>
+      <Title as="h2">{settings.educationLabel}</Title>
       <EducationalCard />
       <div className="my-3 md:my-4 lg:my-6 xl:my-7" aria-hidden></div>
-      <Title as="h2">
-        {settings.certificatesText}
-      </Title>
+      <Title as="h2">{settings.certificatesText}</Title>
       <CertificatesList />
       <NextPageLink path="/skills">
         {capitalize(links.at(2)?.label as string) || "Next"}

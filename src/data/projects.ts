@@ -7,17 +7,26 @@ import ExpressIcon from "../components/ui/icons/ExpressIcon";
 
 import wildOasisWebsiteImg from "../assets/images/the-wild-oasis-screenshot.png";
 import wildOasisDashboardImg from "../assets/images/the-wild-oasis-dashboard-screenshot.png";
+import blogImg from "../assets/images/django-blog-screenshot.png";
+import ecommerceImg from "../assets/images/django-e-commerce-screenshot.png";
+
 import ReactIcon from "../components/ui/icons/ReactIcon";
 import SupabaseIcon from "../components/ui/icons/SupabaseIcon";
 import StyledComponentsIcon from "../components/ui/icons/StyledComponentsIcon";
 
 import { type JSX } from "react";
+import RechartsIcon from "../components/ui/icons/RechartsIcon";
+import DjangoIcon from "../components/ui/icons/DjangoIcon";
+import PythonIcon from "../components/ui/icons/PythonIcon";
+import CSSIcon from "../components/ui/icons/CSSIcon";
+import HTMLIcon from "../components/ui/icons/HTMLIcon";
+import DockerIcon from "../components/ui/icons/DockerIcon";
+import SQLIcon from "../components/ui/icons/SQLIcon";
 
 const projectsList = [
   {
     name: "The Wild Oasis - Website",
-    description:
-      "Full Stack Hotel Booking Platform Responsive, production-ready web app simulating a hotel reservation system. Built with Next.js (App Router), styled with Tailwind CSS, and connected to a secure Express.js backend with JWT and NextAuth.js authentication. Supports Google login and real-time booking.",
+    description: "",
     image: wildOasisWebsiteImg,
     techStack: [
       { techLabel: "Next.js", techIcon: NextIcon },
@@ -34,15 +43,44 @@ const projectsList = [
   },
   {
     name: "The Wild Oasis - Admin Dashboard",
-    description:
-      "Internal Hotel Management System Admin panel for managing bookings, guests, and cabins. Includes charts, authentication, filtering, and CRUD operations.",
+    description: "",
     image: wildOasisDashboardImg,
     techStack: [
       { techLabel: "React", techIcon: ReactIcon },
       { techLabel: "Supabase", techIcon: SupabaseIcon },
       { techLabel: "Styled Components", techIcon: StyledComponentsIcon },
+      { techLabel: "Recharts", techIcon: RechartsIcon },
     ],
     githubLink: "https://github.com/Igorbraziel/the-wild-oasis",
+    liveAppLink: "",
+  },
+  {
+    name: "Blog - Django",
+    description: "",
+    image: blogImg,
+    techStack: [
+      { techLabel: "Django", techIcon: DjangoIcon },
+      { techLabel: "Python", techIcon: PythonIcon },
+      { techLabel: "Docker", techIcon: DockerIcon },
+      { techLabel: "PostgreSQL", techIcon: PostgreSQLIcon },
+      { techLabel: "HTML5", techIcon: HTMLIcon },
+      { techLabel: "CSS3", techIcon: CSSIcon },
+    ],
+    githubLink: "https://github.com/Igorbraziel/Django_Projeto_Blog",
+    liveAppLink: "",
+  },
+  {
+    name: "E-commerce - Django",
+    description: "",
+    image: ecommerceImg,
+    techStack: [
+      { techLabel: "Django", techIcon: DjangoIcon },
+      { techLabel: "Python", techIcon: PythonIcon },
+      { techLabel: "SQL", techIcon: SQLIcon },
+      { techLabel: "HTML5", techIcon: HTMLIcon },
+      { techLabel: "CSS3", techIcon: CSSIcon },
+    ],
+    githubLink: "https://github.com/Igorbraziel/Django_Projeto_E-commerce",
     liveAppLink: "",
   },
 ];
@@ -50,15 +88,22 @@ const projectsList = [
 export function useProjectsData() {
   const { t } = useTranslation("projects");
 
+  const projectsDescriptions = t("projectsDescriptions", { returnObjects: true }) as string[];
+  const multiLanguageProjects = projectsList.map((project, index) => {
+    return {...project, description: projectsDescriptions[index]}
+  })
+
   return {
     projectsLabels: t("projectsLabels", {
       returnObjects: true,
     }) as ProjectsLabels,
-    projectsList: projectsList as ProjectsListType,
+    projectsList: multiLanguageProjects as ProjectsListType,
   };
 }
 
-export type ProjectsListType = {
+export type ProjectsListType = Project[];
+
+export type Project = {
   name: string;
   description: string;
   image: string;
@@ -73,7 +118,7 @@ export type ProjectsListType = {
       }
     | string;
   liveAppLink: string;
-}[];
+};
 
 type ProjectsLabels = {
   projectsText: string;

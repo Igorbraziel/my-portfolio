@@ -10,7 +10,7 @@ export default function SideNavigation({ onClose }: SideNavigationProps) {
 
   return (
     <nav className="mt-2">
-      <ul>
+      <ul className="flex flex-col gap-0.5">
         {links.map((link, index) => (
           <Link
             className="cursor-pointer"
@@ -19,7 +19,7 @@ export default function SideNavigation({ onClose }: SideNavigationProps) {
             onClick={onClose}
           >
             <li
-              className="flex gap-3 text-sm font-bold hover:text-neutral-600 hover:underline hover:dark:text-neutral-400"
+              className="flex gap-3 items-center text-sm font-bold hover:text-neutral-600 hover:underline hover:dark:text-neutral-400"
               key={link.label}
             >
               {<link.icon fontSize="small" />}

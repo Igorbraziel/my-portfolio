@@ -1,5 +1,11 @@
 {
   "projectsLabels": {
     "projectsText": "Proyectos"
-  }
+  },
+  "projectsDescriptions": [
+    "Plataforma integral de reservas de hotel. Aplicación web adaptable y lista para producción que simula un sistema de reservas de hotel. Desarrollada con Next.js (App Router), diseñada con Tailwind CSS y conectada a un backend seguro de Express.js con autenticación JWT y NextAuth.js. Compatible con inicio de sesión de Google y reservas en tiempo real.",
+    "Panel de administración del sistema interno de gestión hotelera para gestionar reservas, huéspedes y cabañas. Incluye gráficos, autenticación, filtrado y operaciones CRUD.",
+    "Este proyecto es una aplicación web de blog desarrollada con el framework Django y en contenedores con Docker, cuyo objetivo es gestionar publicaciones de forma sencilla y eficiente. La aplicación permite crear, ver, editar y eliminar publicaciones, además de contar con un panel de administración para una gestión completa del contenido.",
+    "Este proyecto es un prototipo funcional de una aplicación de comercio electrónico desarrollada con el framework Django. Incluye funciones esenciales de una tienda online, como el registro de usuarios, un catálogo de productos, un carrito de compra y un panel de administración."
+  ]
 }

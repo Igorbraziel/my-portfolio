@@ -1,8 +1,8 @@
 import PsychologyIcon from "@mui/icons-material/Psychology";
-import { useUserData } from "../../data/user";
+import { useUserData } from "../../../../data/user";
 import EducationalInfo from "./EducationalInfo";
 
-const colorsMap = ["indigo", "fuchsia", "purple", "violet", "teal"];
+const colorsMap = ["indigo", "fuchsia", "purple", "violet"];
 
 export default function EducationalCard() {
   const { graduation } = useUserData();
