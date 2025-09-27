@@ -1,5 +1,16 @@
 {
   "settings": {
+    "contactLabels": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "location": "Location",
+      "contact": "Contact",
+      "network": "Networks",
+      "buttonText": "Send Message"
+    },
     "uploadButtonText": "Download Resume",
     "viewButtonText": "View Resume",
     "message404": "Page Not Found",
@@ -13,6 +24,7 @@
     "durationText": "Duration",
     "hoursText": "Hours",
     "technologiesText": "Technologies",
-    "certificatesText": "Certificates"
+    "certificatesText": "Certificates",
+    "copiedText": "Copied"
   }
 }

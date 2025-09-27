@@ -9,7 +9,7 @@ export default function ProjectTechStack({ project }: { project: Project }) {
       <h4 className="xs:text-base mb-1 text-sm font-semibold sm:text-lg md:mb-2 md:text-xl lg:text-2xl">
         Tech Stack:
       </h4>
-      <ul className="flex flex-wrap gap-2">
+      <ul className="flex flex-wrap gap-2 md:gap-3 lg:gap-4">
         {project.techStack.map((tech, index) => (
           <Tag
             baseColor={
@@ -19,7 +19,7 @@ export default function ProjectTechStack({ project }: { project: Project }) {
                 | "purple"
                 | "violet"
             }
-            className="flex items-center gap-2 px-2 py-1 hover:scale-105"
+            className="flex items-center gap-2 px-2 py-1 hover:scale-105 cursor-pointer"
             as="li"
             key={index}
           >

@@ -1,5 +1,16 @@
 {
   "settings": {
+    "contactLabels": {
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "location": "Ubicación",
+      "contact": "Contacto",
+      "network": "Redes",
+      "buttonText": "Enviar mensaje"
+    },
     "uploadButtonText": "Descargar CV",
     "viewButtonText": "Ver CV",
     "message404": "Página no encontrada",
@@ -13,6 +24,7 @@
     "durationText": "Duración",
     "hoursText": "Horas",
     "technologiesText": "Tecnologías",
-    "certificatesText": "Certificados"
+    "certificatesText": "Certificados",
+    "copiedText": "Copiado"
   }
 }

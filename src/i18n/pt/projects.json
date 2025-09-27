@@ -4,8 +4,9 @@
   },
   "projectsDescriptions": [
     "Plataforma de Reservas de Hotéis Full Stack. Aplicativo web responsivo e pronto para produção que simula um sistema de reservas de hotéis. Desenvolvido com Next.js (App Router), estilizado com Tailwind CSS e conectado a um backend Express.js seguro com autenticação JWT e NextAuth.js. Suporta login do Google e reservas em tempo real.",
-    "Painel de administração do Sistema Interno de Gestão Hoteleira para gerenciar reservas, hóspedes e cabines. Inclui gráficos, autenticação, filtragem e operações CRUD.",
+    "Um painel de administração hoteleiro completo que simula um sistema interno para gerenciar reservas, hóspedes e cabines. O sistema inclui autenticação, gráficos, filtros e operações CRUD completas, permitindo que a equipe gerencie as operações do hotel com eficiência. Desenvolvido com React, React Query, React Router, Styled Components e Supabase.",
     "Este projeto é uma aplicação web de Blog desenvolvida com o framework Django e containerizada com Docker, com o objetivo de gerenciar postagens de forma simples e eficiente. A aplicação permite criar, visualizar, editar e excluir posts, além de contar com um painel administrativo para gerenciamento completo do conteúdo.",
-    "Este projeto é um protótipo funcional de uma aplicação de e-commerce desenvolvida com o framework Django. Ele possui funcionalidades essenciais de uma loja virtual, como cadastro de usuários, catálogo de produtos, carrinho de compras e painel administrativo."
+    "Este projeto é um protótipo funcional de uma aplicação de e-commerce desenvolvida com o framework Django. Ele possui funcionalidades essenciais de uma loja virtual, como cadastro de usuários, catálogo de produtos, carrinho de compras e painel administrativo.",
+    "O WorldWise é um aplicativo web de mapas de viagem interativo que permite rastrear, visualizar e explorar os lugares que você visitou ao redor do mundo. Desenvolvido com ferramentas modernas do React, ele oferece uma experiência de usuário fluida, rápida e envolvente."
   ]
 }

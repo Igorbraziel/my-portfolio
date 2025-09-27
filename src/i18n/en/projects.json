@@ -4,8 +4,9 @@
   },
   "projectsDescriptions": [
     "Full Stack Hotel Booking Platform Responsive, production-ready web app simulating a hotel reservation system. Built with Next.js (App Router), styled with Tailwind CSS, and connected to a secure Express.js backend with JWT and NextAuth.js authentication. Supports Google login and real-time booking.",
-    "Internal Hotel Management System Admin panel for managing bookings, guests, and cabins. Includes charts, authentication, filtering, and CRUD operations.",
+    "A full-featured hotel admin dashboard that simulates an internal system for managing bookings, guests, and cabins. The system includes authentication, charts, filtering, and full CRUD operations, enabling staff to manage hotel operations efficiently. Built with React, React Query, React Router, Styled Components, and Supabase.",
     "This project is a blog web application developed with the Django framework and containerized with Docker, aiming to manage posts simply and efficiently. The application allows you to create, view, edit, and delete posts, in addition to having an administrative panel for complete content management.",
-    "This project is a functional prototype of an e-commerce application developed with the Django framework. It includes essential online store features, such as user registration, a product catalog, a shopping cart, and an administrative panel."
+    "This project is a functional prototype of an e-commerce application developed with the Django framework. It includes essential online store features, such as user registration, a product catalog, a shopping cart, and an administrative panel.",
+    "WorldWise is an interactive travel map web app that allows you to track, visualize, and explore the places you've visited around the world. Built with modern React tools, it offers a smooth, fast, and engaging user experience."
   ]
 }

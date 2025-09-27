@@ -9,6 +9,7 @@ export function useSettingsData() {
 }
 
 type Settings = {
+  contactLabels: ContactLabels;
   uploadButtonText: string;
   viewButtonText: string;
   message404: string;
@@ -20,6 +21,19 @@ type Settings = {
   hoursText: string;
   technologiesText: string;
   certificatesText: string;
+  copiedText: string;
+};
+
+type ContactLabels = {
+  name: string;
+  phone: string;
+  email: string;
+  subject: string;
+  message: string;
+  location: string;
+  contact: string;
+  network: string;
+  buttonText: string;
 };
 
 type Footer = {

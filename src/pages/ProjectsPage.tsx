@@ -11,8 +11,8 @@ export default function ProjectsPage() {
   const links = useLinksData()
 
   return (
-    <MainContainer>
-      <Title as="h1">{projectsLabels.projectsText}</Title>
+    <MainContainer className="!max-w-320">
+      <Title as="h1" className="!mb-2 sm:!mb-3 md:!mb-4 lg:!mb-5 xl:!mb-6">{projectsLabels.projectsText}</Title>
       <ProjectsList />
       <NextPageLink path="/contact">
         {capitalize(links.at(4)?.label as string) || "Next"}

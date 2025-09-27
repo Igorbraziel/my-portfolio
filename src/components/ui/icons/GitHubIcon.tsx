@@ -27,7 +27,7 @@ export default function GitHubIcon(props: React.SVGProps<SVGSVGElement>) {
         <g
           id="Dribbble-Light-Preview"
           transform="translate(-140.000000, -7559.000000)"
-          fill={ isDark ? "#000000" : "#FFFFFF"}
+          fill={isDark ? "#000000" : "#FFFFFF"}
         >
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path

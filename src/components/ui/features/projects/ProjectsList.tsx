@@ -8,7 +8,7 @@ export default function ProjectsList() {
   const { projectsList } = useProjectsData();
 
   return (
-    <ul className="grid grid-cols-1 gap-8 xs:gap-12 sm:gap-14 md:grid-cols-2">
+    <ul className="grid grid-cols-1 gap-8 xs:gap-12 sm:gap-14 lg:grid-cols-2">
       {projectsList.map((project, index) => (
         <li key={index} className="flex flex-col divide-y rounded-sm ring-4 ring-blue-900/50 backdrop-blur-[1px] bg-slate-400/20 dark:bg-slate-800/20">
           <ProjectImage project={project} />

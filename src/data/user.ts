@@ -34,7 +34,7 @@ const media = [
     profileURL: "https://github.com/Igorbraziel",
     mediaIcon: GitHubIcon,
     bgStyle:
-      "bg-gradient-to-tr from-neutral-800 via-gray-800 to-stone-700 dark:from-neutral-900 dark:via-gray-900 dark:to-stone-800",
+      "bg-gradient-to-tr from-neutral-800 via-gray-800 to-stone-700 dark:from-neutral-800 dark:via-gray-700 dark:to-stone-800",
     textStyle: "text-stone-50 dark:text-stone-100",
   },
   {

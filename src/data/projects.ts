@@ -9,6 +9,7 @@ import wildOasisWebsiteImg from "../assets/images/the-wild-oasis-screenshot.png"
 import wildOasisDashboardImg from "../assets/images/the-wild-oasis-dashboard-screenshot.png";
 import blogImg from "../assets/images/django-blog-screenshot.png";
 import ecommerceImg from "../assets/images/django-e-commerce-screenshot.png";
+import worldwiseImg from "../assets/images/world-wise-screenshot.png";
 
 import ReactIcon from "../components/ui/icons/ReactIcon";
 import SupabaseIcon from "../components/ui/icons/SupabaseIcon";
@@ -22,6 +23,9 @@ import CSSIcon from "../components/ui/icons/CSSIcon";
 import HTMLIcon from "../components/ui/icons/HTMLIcon";
 import DockerIcon from "../components/ui/icons/DockerIcon";
 import SQLIcon from "../components/ui/icons/SQLIcon";
+import CSSModulesIcon from "../components/ui/icons/CSSModules";
+import MapIcon from "../components/ui/icons/MapIcon";
+import ThunderIcon from "../components/ui/icons/ThunderIcon";
 
 const projectsList = [
   {
@@ -83,15 +87,30 @@ const projectsList = [
     githubLink: "https://github.com/Igorbraziel/Django_Projeto_E-commerce",
     liveAppLink: "",
   },
+  {
+    name: "WorldWise",
+    description: "",
+    image: worldwiseImg,
+    techStack: [
+      { techLabel: "React", techIcon: ReactIcon },
+      { techLabel: "CSS Modules", techIcon: CSSModulesIcon },
+      { techLabel: "React Leaflet", techIcon: MapIcon },
+      { techLabel: "Vite", techIcon: ThunderIcon },
+    ],
+    githubLink: "https://github.com/Igorbraziel/worldwise",
+    liveAppLink: "",
+  },
 ];
 
 export function useProjectsData() {
   const { t } = useTranslation("projects");
 
-  const projectsDescriptions = t("projectsDescriptions", { returnObjects: true }) as string[];
+  const projectsDescriptions = t("projectsDescriptions", {
+    returnObjects: true,
+  }) as string[];
   const multiLanguageProjects = projectsList.map((project, index) => {
-    return {...project, description: projectsDescriptions[index]}
-  })
+    return { ...project, description: projectsDescriptions[index] };
+  });
 
   return {
     projectsLabels: t("projectsLabels", {
