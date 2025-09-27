@@ -34,6 +34,7 @@ type ContactLabels = {
   contact: string;
   network: string;
   buttonText: string;
+  submittingText: string
 };
 
 type Footer = {

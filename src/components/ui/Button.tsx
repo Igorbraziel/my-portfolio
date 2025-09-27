@@ -2,11 +2,12 @@ import type React from "react";
 import { motion } from "motion/react";
 
 interface ButtonProps {
-  type: "confirm" | "warning" | "normal";
+  type: "confirm" | "warning" | "normal" | "submit";
   size: "small" | "medium" | "large" | "extra-large" | "extra-small";
   onClick?: () => void;
   children: React.ReactNode;
   extraClassNames?: string;
+  disabled?: boolean;
 }
 
 export default function Button({
@@ -15,6 +16,7 @@ export default function Button({
   onClick,
   children,
   extraClassNames,
+  disabled = false,
 }: ButtonProps) {
   let typeStyle;
   switch (type) {
@@ -27,6 +29,10 @@ export default function Button({
         "font-extrabold bg-red-600 text-red-50 hover:bg-red-700 border-orange-700 shadow-rose-200";
       break;
     case "normal":
+      typeStyle =
+        "bg-stone-900 hover:bg-stone-700 border-stone-600 hover:border-slate-500 dark:bg-stone-300 dark:hover:bg-stone-400 dark:border-stone-600 dark:hover:border-slate-700 dark:text-stone-950 text-stone-50 font-bold";
+      break;
+    case "submit":
       typeStyle =
         "bg-stone-900 hover:bg-stone-700 border-stone-600 hover:border-slate-500 dark:bg-stone-300 dark:hover:bg-stone-400 dark:border-stone-600 dark:hover:border-slate-700 dark:text-stone-950 text-stone-50 font-bold";
       break;
@@ -63,10 +69,12 @@ export default function Button({
 
   return (
     <motion.button
+      type={type == "submit" ? "submit" : "button"}
       className={`${typeStyle} ${sizeStyle} cursor-pointer rounded-sm border-4 ${extraClassNames}`}
       onClick={onClick}
-      whileHover={{ scale: 1.05 }}
+      whileHover={type == "submit" ? "hover" : { scale: 1.05 }}
       whileTap={{ scale: 0.96 }}
+      disabled={disabled}
     >
       {children}
     </motion.button>

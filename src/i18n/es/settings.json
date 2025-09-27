@@ -9,7 +9,8 @@
       "location": "Ubicación",
       "contact": "Contacto",
       "network": "Redes",
-      "buttonText": "Enviar mensaje"
+      "buttonText": "Enviar mensaje",
+      "submittingText": "Enviando"
     },
     "uploadButtonText": "Descargar CV",
     "viewButtonText": "Ver CV",

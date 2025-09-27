@@ -9,7 +9,8 @@
       "location": "Location",
       "contact": "Contact",
       "network": "Networks",
-      "buttonText": "Send Message"
+      "buttonText": "Send Message",
+      "submittingText": "Submitting..."
     },
     "uploadButtonText": "Download Resume",
     "viewButtonText": "View Resume",
