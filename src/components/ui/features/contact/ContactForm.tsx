@@ -7,7 +7,10 @@ import { useSettingsData } from "../../../../data/settings";
 import SubmitButton from "./SubmitButton";
 import ErrorMessage from "./ErrorMessage";
 import { emailRegex, phoneRegex } from "../../../../utils/regex";
+
 import toast from "react-hot-toast";
+
+import confetti from "canvas-confetti";
 
 const nameCharacterLimit = 80;
 const emailCharacterLimit = 100;
@@ -33,7 +36,7 @@ export default function ContactForm() {
     submittingText,
     errorMessages,
     successToast,
-    errorToast
+    errorToast,
   } = contactLabels;
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
@@ -49,6 +52,7 @@ export default function ContactForm() {
 
       if (response.ok) {
         toast.success(successToast);
+        confetti({ particleCount: 200 });
         reset();
       } else {
         toast.error(errorToast);
