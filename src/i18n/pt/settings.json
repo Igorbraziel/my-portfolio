@@ -10,7 +10,20 @@
       "contact": "Contato",
       "network": "Redes",
       "buttonText": "Enviar Mensagem",
-      "submittingText": "Enviando..."
+      "submittingText": "Enviando...",
+      "errorMessages": {
+        "name": "Por favor, digite seu nome!",
+        "email": "Por favor, digite seu email!",
+        "message": "Por favor, digite sua mensagem!",
+        "nameMaxLength": "Nome não pode exceder ? caracteres",
+        "emailMaxLength": "Email não pode exceder ? caracteres",
+        "subjectMaxLength": "Assunto não pode exceder ? caracteres",
+        "messageMaxLength": "Mensagem não pode exceder ? caracteres",
+        "invalidEmail": "Email inválido",
+        "invalidPhone": "Telefone inválido"
+      },
+      "successToast": "Mensagem enviada com sucesso!",
+      "errorToast": "Algo deu errado, tente novamente!"
     },
     "uploadButtonText": "Baixar CV",
     "viewButtonText": "Visualizar CV",

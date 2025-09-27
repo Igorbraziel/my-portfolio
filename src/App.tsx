@@ -11,10 +11,14 @@ import PageNotFound from "./pages/PageNotFound";
 import SkillsPage from "./pages/SkillsPage";
 import EducationPage from "./pages/EducationPage";
 import ExperiencePage from "./pages/ExperiencePage";
+import CustomToaster from "./components/ui/CustomToaster";
+
+
 
 function App() {
   return (
     <DarkModeProvider>
+      <CustomToaster />
       <BrowserRouter>
         <Routes>
           <Route element={<AppLayout />}>

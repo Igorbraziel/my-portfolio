@@ -34,23 +34,23 @@ export default function DotsSpinner() {
     <div role="status" className="pt-2.5">
       <span className="visually-hidden">Loading...</span>
       <motion.div
-        className="flex h-10 w-10 justify-around gap-1.5 sm:h-15.5 sm:w-15.5 sm:gap-2 lg:h-20 lg:w-20"
+        className="flex w-8 justify-around gap-1 sm:w-12.5 sm:gap-2 lg:w-13"
         variants={containerVariants}
         initial="start"
         animate="end"
       >
         <motion.span
-          className="block h-2 w-2 rounded-[50%] bg-blue-950 sm:h-3.5 sm:w-3.5 lg:h-5 lg:w-5 dark:bg-blue-800"
+          className="block h-2 w-2 rounded-[50%] bg-blue-200 sm:h-2.5 sm:w-2.5 lg:h-3 lg:w-3 dark:bg-blue-950"
           variants={dotVariants}
           transition={dotTransition}
         />
         <motion.span
-          className="block h-2 w-2 rounded-[50%] bg-blue-950 sm:h-3.5 sm:w-3.5 lg:h-5 lg:w-5 dark:bg-blue-800"
+          className="block h-2 w-2 rounded-[50%] bg-blue-200 sm:h-2.5 sm:w-2.5 lg:h-3 lg:w-3 dark:bg-blue-950"
           variants={dotVariants}
           transition={dotTransition}
         />
         <motion.span
-          className="block h-2 w-2 rounded-[50%] bg-blue-950 sm:h-3.5 sm:w-3.5 lg:h-5 lg:w-5 dark:bg-blue-800"
+          className="block h-2 w-2 rounded-[50%] bg-blue-200 sm:h-2.5 sm:w-2.5 lg:h-3 lg:w-3 dark:bg-blue-950"
           variants={dotVariants}
           transition={dotTransition}
         />

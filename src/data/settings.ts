@@ -34,7 +34,20 @@ type ContactLabels = {
   contact: string;
   network: string;
   buttonText: string;
-  submittingText: string
+  submittingText: string;
+  errorMessages: {
+    name: string;
+    email: string;
+    message: string;
+    nameMaxLength: string;
+    emailMaxLength: string;
+    subjectMaxLength: string;
+    messageMaxLength: string;
+    invalidEmail: string;
+    invalidPhone: string;
+  };
+  successToast: string;
+  errorToast: string;
 };
 
 type Footer = {

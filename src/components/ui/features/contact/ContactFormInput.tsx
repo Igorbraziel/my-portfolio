@@ -25,7 +25,7 @@ export default function ContactFormInput({
   placeholder = "",
 }: ContactFormInputProps) {
   const style =
-    "backdrop-blur-xs rounded-lg border px-2 w-full max-w-140 xs:text-sm sm:text-base lg:text-lg lg:py-2 lg:px-3 sm:py-1.5 sm:px-2.5 shadow-md dark:shadow-slate-200/50 shadow-slate-900/50 text-xs py-1";
+    "focus:outline-none focus:border-2 focus:bg-indigo-600/10 backdrop-blur-xs rounded-lg border px-2 w-full max-w-140 xs:text-sm sm:text-base lg:text-lg lg:py-2 lg:px-3 sm:py-1.5 sm:px-2.5 shadow-md dark:shadow-slate-200/50 shadow-slate-900/50 text-xs py-1";
 
   return as == "input" ? (
     <input

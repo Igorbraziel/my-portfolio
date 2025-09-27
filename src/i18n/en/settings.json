@@ -10,7 +10,20 @@
       "contact": "Contact",
       "network": "Networks",
       "buttonText": "Send Message",
-      "submittingText": "Submitting..."
+      "submittingText": "Submitting...",
+      "errorMessages": {
+        "name": "Please, enter your name!",
+        "email": "Please, enter your email!",
+        "message": "Please, enter your message!",
+        "nameMaxLength": "Name cannot exceed ? characters",
+        "emailMaxLength": "Email cannot exceed ? characters",
+        "subjectMaxLength": "Subject cannot exceed ? characters",
+        "messageMaxLength": "Message cannot exceed ? characters",
+        "invalidEmail": "Invalid Email",
+        "invalidPhone": "Invalid Phone"
+      },
+      "successToast": "Message Sent Succesfully!",
+      "errorToast": "Something went wrong, try again!" 
     },
     "uploadButtonText": "Download Resume",
     "viewButtonText": "View Resume",
