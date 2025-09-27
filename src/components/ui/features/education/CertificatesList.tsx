@@ -22,7 +22,7 @@ export default function CertificatesList() {
         >
           <li
             key={index}
-            className="flex h-full w-full flex-col justify-between rounded-xl border-2 border-stone-800 bg-indigo-400/30 px-1.5 py-1 md:px-1 dark:border-stone-200 dark:bg-blue-950/50"
+            className="shadow-md shadow-purple-950 dark:shadow-purple-100 flex h-full w-full flex-col justify-between rounded-xl border-2 border-stone-800 bg-indigo-400/30 px-1.5 py-1 md:px-1 dark:border-stone-200 dark:bg-blue-950/50"
           >
             <div className="mx-2 my-2 flex justify-between">
               <div className="xs:w-[70%] flex w-[80%] flex-col sm:w-[90%]">

@@ -28,7 +28,7 @@ export default function Button({
       break;
     case "normal":
       typeStyle =
-        "hover:bg-stone-700 bg-stone-900 border-stone-600 hover:border-slate-500 dark:bg-stone-300 dark:hover:bg-stone-400 dark:border-stone-600 dark:hover:border-slate-700 dark:text-stone-950 text-stone-50 font-bold";
+        "bg-stone-900 hover:bg-stone-700 border-stone-600 hover:border-slate-500 dark:bg-stone-300 dark:hover:bg-stone-400 dark:border-stone-600 dark:hover:border-slate-700 dark:text-stone-950 text-stone-50 font-bold";
       break;
     default:
       throw new Error("Type must to be 'confirm' or 'warning' or 'normal'");

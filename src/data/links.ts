@@ -3,6 +3,8 @@ import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import SchoolIcon from "@mui/icons-material/School";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import EngineeringIcon from "@mui/icons-material/Engineering";
+import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
+
 import { useTranslation } from "react-i18next";
 
 export function useLinksData() {
@@ -26,6 +28,12 @@ export function useLinksData() {
       path: "/skills",
       icon: EngineeringIcon,
       emoji: "🛠️",
+    },
+    {
+      label: "experience",
+      path: "/experience",
+      icon: WorkOutlineIcon,
+      emoji: "💼",
     },
     {
       label: "projects",

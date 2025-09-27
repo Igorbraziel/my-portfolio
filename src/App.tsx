@@ -3,13 +3,14 @@ import AppLayout from "./components/layout/AppLayout";
 import { DarkModeProvider } from "./context/DarkModeContext";
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router";
+
 import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
 import ProjectsPage from "./pages/ProjectsPage";
-import ProjectPage from "./pages/ProjectPage";
 import PageNotFound from "./pages/PageNotFound";
 import SkillsPage from "./pages/SkillsPage";
 import EducationPage from "./pages/EducationPage";
+import ExperiencePage from "./pages/ExperiencePage";
 
 function App() {
   return (
@@ -21,10 +22,8 @@ function App() {
             <Route path="homepage" element={<HomePage />} />
             <Route path="education" element={<EducationPage />} />
             <Route path="skills" element={<SkillsPage />} />
-            <Route path="projects">
-              <Route index element={<ProjectsPage />} />
-              <Route path=":pid" element={<ProjectPage />} />
-            </Route>
+            <Route path="experience" element={<ExperiencePage />} />
+            <Route path="projects" element={<ProjectsPage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="*" element={<PageNotFound />} />
           </Route>
