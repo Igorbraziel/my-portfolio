@@ -32,7 +32,6 @@ const dotTransition: Transition = {
 export default function DotsSpinner() {
   return (
     <div role="status" className="pt-2.5">
-      <span className="visually-hidden">Loading...</span>
       <motion.div
         className="flex w-8 justify-around gap-1 sm:w-12.5 sm:gap-2 lg:w-13"
         variants={containerVariants}

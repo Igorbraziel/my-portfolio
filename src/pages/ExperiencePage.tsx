@@ -1,3 +1,4 @@
+import ExperienceTimeline from "../components/ui/features/experience/ExperienceTimeline";
 import MainContainer from "../components/ui/MainContainer";
 import NextPageLink from "../components/ui/NextPageLink";
 import Title from "../components/ui/Title";
@@ -10,6 +11,7 @@ export default function ExperiencePage() {
   return (
     <MainContainer>
       <Title as="h1">Experience</Title>
+      <ExperienceTimeline />
       <NextPageLink path="/projects">
         {capitalize(links.at(4)?.label as string) || "Next"}
       </NextPageLink>
