@@ -1,69 +1,53 @@
-# React + TypeScript + Vite
+# 🌐 My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website!
+This project showcases my work, skills, and projects in a modern and interactive way.
 
-Currently, two official plugins are available:
+🚀 **Live Demo:** [Visit Portfolio](https://my-portfolio.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* 🎨 **Modern UI** — Responsive, elegant design built with **Tailwind CSS**
+* 🌍 **Multi-language Support** — English, Portuguese (Brazil), and Spanish using **i18next**
+* 📬 **Contact Form** — Integrated with **Formspree** for direct communication
+* ⚡ **SPA (Single Page Application)** — Smooth navigation and performance
+* 🎥 **Animations & Transitions** — Powered by **Framer Motion**
+* 🧩 **Accessible Components** — Using **Headless UI** for better UX
+* 🔠 **Material Icons** — Clean and modern iconography
+* 🛠️ **TypeScript** — Strongly typed for reliability and maintainability
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* **Frontend:** [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+* **Deployment:** [Vercel](https://vercel.com/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Animations:** [Framer Motion](https://www.framer.com/motion/)
+* **Internationalization:** [i18next](https://www.i18next.com/)
+* **UI Components:** [Headless UI](https://headlessui.dev/)
+* **Icons:** [Material Icons](https://fonts.google.com/icons)
+* **Forms:** [Formspree](https://formspree.io/)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🌐 Deployment
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This portfolio is deployed with **Vercel**.
+Every push to the `main` branch automatically triggers a new deployment.
+
+---
+
+## 👤 Author
+
+**Igor Reis Braziel**
+
+* 💼 [LinkedIn](https://www.linkedin.com/in/igor-reis-braziel-499b00300/)
+* 📧 [Email](braziel@discente.ufg.br)
+* 🐙 [GitHub](https://github.com/Igorbraziel)
+
+---
+
+⭐ If you like this project, don’t forget to **star the repo**!

@@ -29,27 +29,50 @@ const dotTransition: Transition = {
   ease: "easeInOut",
 };
 
-export default function DotsSpinner() {
+interface DotsSpinnerProps {
+  size?: "small" | "large";
+}
+
+export default function DotsSpinner({ size = "small" }: DotsSpinnerProps) {
+  let containerStyle, dotStyle;
+
+  switch (size) {
+    case "small":
+      containerStyle =
+        "flex w-8 justify-around gap-1 sm:w-12.5 sm:gap-2 lg:w-13";
+      dotStyle =
+        "block h-2 w-2 rounded-[50%] bg-blue-200 sm:h-2.5 sm:w-2.5 lg:h-3 lg:w-3 dark:bg-blue-950";
+      break;
+    case "large":
+      containerStyle =
+        "flex w-40 justify-around gap-5";
+      dotStyle =
+        "block h-10 w-10 rounded-[50%] bg-blue-200 dark:bg-blue-950";
+      break;
+    default:
+      throw new Error("The DotsSpinner size must to be 'small' or 'large'");
+  }
+
   return (
     <div role="status" className="pt-2.5">
       <motion.div
-        className="flex w-8 justify-around gap-1 sm:w-12.5 sm:gap-2 lg:w-13"
+        className={containerStyle}
         variants={containerVariants}
         initial="start"
         animate="end"
       >
         <motion.span
-          className="block h-2 w-2 rounded-[50%] bg-blue-200 sm:h-2.5 sm:w-2.5 lg:h-3 lg:w-3 dark:bg-blue-950"
+          className={dotStyle}
           variants={dotVariants}
           transition={dotTransition}
         />
         <motion.span
-          className="block h-2 w-2 rounded-[50%] bg-blue-200 sm:h-2.5 sm:w-2.5 lg:h-3 lg:w-3 dark:bg-blue-950"
+          className={dotStyle}
           variants={dotVariants}
           transition={dotTransition}
         />
         <motion.span
-          className="block h-2 w-2 rounded-[50%] bg-blue-200 sm:h-2.5 sm:w-2.5 lg:h-3 lg:w-3 dark:bg-blue-950"
+          className={dotStyle}
           variants={dotVariants}
           transition={dotTransition}
         />
