@@ -36,5 +36,22 @@
       "Data Structure and Algorithms",
       "Databases"
     ]
-  }
+  },
+  "experiences": [
+    {
+      "title": "Programming and Robotics Instructor",
+      "company": "PLAY ROBOTICA E GAMES EDUCACIONAL LTDA",
+      "date": "2025 - Present",
+      "activities": [
+        "Supervise students in hands-on activities (robot assembly, game development, programming projects)",
+        "Prepare and organize teaching materials (robotics kits, computers, software)",
+        "Support the implementation of assessments and fun learning activities in the technology area",
+        "Help organize competitions or exhibitions of student projects",
+        "Install and configure educational software used in classes",
+        "Assist with basic maintenance of computers and robotics kits",
+        "Support the updating of teaching systems or platforms",
+        "Test games, applications, and digital resources that will be used in class"
+      ]
+    }
+  ]
 }

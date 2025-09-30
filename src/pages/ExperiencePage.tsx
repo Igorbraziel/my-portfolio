@@ -10,7 +10,7 @@ export default function ExperiencePage() {
 
   return (
     <MainContainer>
-      <Title as="h1">Experience</Title>
+      <Title as="h1">{links.at(3)?.label}</Title>
       <ExperienceTimeline />
       <NextPageLink path="/projects">
         {capitalize(links.at(4)?.label as string) || "Next"}

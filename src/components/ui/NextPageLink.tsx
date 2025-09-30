@@ -28,7 +28,7 @@ export default function NextPageLink({ path, children }: NextPageProps) {
     <div className="flex justify-end mb-3 mt-1 md:mt-4">
       <DynamicBackground
         colors={isDark ? darkColors : lightColors}
-        className="rounded-xl px-3 py-2 duration-100 hover:scale-105 text-sm sm:text-base md:text-lg lg:text-xl hover:font-extrabold"
+        className="shadow-sm shadow-slate-900 dark:shadow-slate-100 rounded-xl px-3 py-2 duration-100 hover:scale-105 text-sm sm:text-base md:text-lg lg:text-xl hover:font-extrabold"
       >
         <Link to={path}>
           {children} <EastIcon />

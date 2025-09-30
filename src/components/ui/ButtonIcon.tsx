@@ -21,7 +21,7 @@ export default function ButtonIcon({
 
   switch (size) {
     case "small":
-      sizeStyle = "text-[10px] p-2 gap-1 sm:p-3 md:p-4 lg:p-5";
+      sizeStyle = "text-[8px] p-2 gap-1 sm:p-3 md:p-4 lg:p-5";
       break;
     case "medium":
       sizeStyle = "text-xs p-3 gap-2 sm:p-4 md:p-5 lg:p-6";
@@ -36,7 +36,7 @@ export default function ButtonIcon({
   return (
     <motion.button
       onClick={onClick}
-      className={`flex cursor-pointer flex-col items-center justify-center uppercase ${sizeStyle} ${type === "link" ? "hover:bg-gray-200 md:text-xs lg:text-sm xl:text-base hover:dark:bg-gray-700" : type === "toggle-icon" ? "rounded-xl bg-yellow-50 dark:bg-slate-950" : style ? style : ""}`}
+      className={`flex cursor-pointer flex-col items-center justify-center uppercase ${sizeStyle} ${type === "link" ? "hover:bg-gray-200 md:text-[10px] lg:text-sm xl:text-base hover:dark:bg-gray-700" : type === "toggle-icon" ? "rounded-xl bg-yellow-50 dark:bg-slate-950" : style ? style : ""}`}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >

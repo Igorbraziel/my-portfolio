@@ -36,5 +36,22 @@
       "Algoritmos e Estrutura de Dados",
       "Bases de Dados"
     ]
-  }
+  },
+  "experiences": [
+    {
+      "title": "Instrutor de Robótica e Programação",
+      "company": "PLAY ROBOTICA E GAMES EDUCACIONAL LTDA",
+      "date": "2025 - Presente",
+      "activities": [
+        "Supervisionar os alunos em atividades práticas (montagem de robôs, desenvolvimento de jogos, projetos de programação)",
+        "Preparar e organizar materiais didáticos (kits de robótica, computadores, softwares)",
+        "Apoiar a implementação de avaliações e atividades lúdicas de aprendizagem na área de tecnologia",
+        "Ajudar a organizar competições ou exposições de projetos dos alunos",
+        "Instalar e configurar softwares educacionais utilizados nas aulas",
+        "Auxiliar na manutenção básica de computadores e kits de robótica",
+        "Apoiar a atualização de sistemas ou plataformas de ensino",
+        "Testes de jogos, aplicativos e recursos digitais que serão utilizados em sala de aula"
+      ]
+    }
+  ]
 }

@@ -118,8 +118,16 @@ export function useUserData() {
     about: t("about"),
     graduation: t("graduation", { returnObjects: true }) as Graduation,
     certificates,
+    experiences: t("experiences", { returnObjects: true }) as Experience[],
   };
 }
+
+export type Experience = {
+  title: string;
+  company: string;
+  date: string;
+  activities: string[];
+};
 
 export type Certificate = {
   company: string;
