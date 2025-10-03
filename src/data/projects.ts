@@ -56,7 +56,7 @@ const projectsList = [
       { techLabel: "Recharts", techIcon: RechartsIcon },
     ],
     githubLink: "https://github.com/Igorbraziel/the-wild-oasis",
-    liveAppLink: "",
+    liveAppLink: "https://braziel-the-wild-oasis.netlify.app",
   },
   {
     name: "Blog - Django",
