@@ -19,6 +19,8 @@ import MongoIcon from "../components/ui/icons/MongoIcon";
 import PostmanIcon from "../components/ui/icons/PostmanIcon";
 import SpringIcon from "../components/ui/icons/SpringIcon";
 import JavaIcon from "../components/ui/icons/JavaIcon";
+import JavaScriptIcon from "../components/ui/icons/JavaScriptIcon";
+import TypeScriptIcon from "../components/ui/icons/TypeScriptIcont";
 
 const media = [
   {
@@ -103,6 +105,20 @@ const certificates = [
       { techLabel: "Postman", techIcon: PostmanIcon },
     ],
     year: 2024,
+  },
+  {
+    company: "Udemy",
+    companyIcon: UdemyIcon,
+    course: "TypeScript | JavaScript | NextJS",
+    duration: 146,
+    url: "https://www.udemy.com/certificate/UC-7b26809e-f849-4952-82af-8203e4541092/",
+    technologies: [
+      { techLabel: "JavaScript", techIcon: JavaScriptIcon },
+      { techLabel: "React", techIcon: ReactIcon },
+      { techLabel: "TypeScript", techIcon: TypeScriptIcon },
+      { techLabel: "Next.js", techIcon: NextIcon },
+    ],
+    year: 2025,
   },
 ];
 
