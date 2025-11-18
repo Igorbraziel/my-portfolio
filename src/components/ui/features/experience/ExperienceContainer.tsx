@@ -12,7 +12,7 @@ export default function ExperienceContainer({
   return (
     <div
       className={`relative mb-10 flex w-full ${
-        (index + 1) % 2 === 0 ? "justify-start" : "justify-end"
+        (index + 1) % 2 === 0 ? "justify-end" : "justify-start"
       }`}
     >
       {children}

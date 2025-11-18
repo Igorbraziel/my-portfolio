@@ -39,9 +39,26 @@
   },
   "experiences": [
     {
+      "title": "Practicante de IA y Ingeniería de Datos",
+      "company": "Tribunal de Contas do Estado de Goiás (TCE-GO)",
+      "date": "Octubre de 2025 - Presente",
+      "activities": [
+        "Apoyar el desarrollo de modelos de machine learning (preprocesamiento de datos, ingeniería de características, entrenamiento de modelos)",
+        "Asistir en la construcción y mantenimiento de pipelines de datos utilizando Python, SQL y herramientas ETL",
+        "Ayudar en la recolección, limpieza y organización de conjuntos de datos provenientes de múltiples fuentes",
+        "Colaborar en el análisis exploratorio de datos y en la creación de visualizaciones e insights",
+        "Desarrollar scripts para automatizar tareas repetitivas de procesamiento de datos",
+        "Probar y validar modelos de IA, documentando resultados y métricas de rendimiento",
+        "Apoyar el despliegue de modelos en entornos de producción o APIs",
+        "Asistir en el mantenimiento de bases de datos, data warehouses o sistemas de almacenamiento en la nube",
+        "Preparar notebooks, informes y dashboards para presentar hallazgos y avances",
+        "Experimentar con LLMs, embeddings, bases de datos vectoriales y técnicas de prompt engineering bajo supervisión"
+      ]
+    },
+    {
       "title": "Instructor de Robótica y Programación",
       "company": "PLAY ROBOTICA E GAMES EDUCACIONAL LTDA",
-      "date": "2025 - Presente",
+      "date": "Septiembre de 2025 - Octubre de 2025",
       "activities": [
         "Supervisar a los estudiantes en actividades prácticas (ensamblaje de robots, desarrollo de juegos, proyectos de programación)",
         "Preparar y organizar materiales didácticos (kits de robótica, computadoras, software)",

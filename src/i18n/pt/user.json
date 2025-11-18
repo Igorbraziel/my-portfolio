@@ -39,9 +39,26 @@
   },
   "experiences": [
     {
+      "title": "Estagiário em IA & Engenharia de Dados",
+      "company": "Tribunal de Contas do Estado de Goiás (TCE-GO)",
+      "date": "Outubro de 2025 - Presente",
+      "activities": [
+        "Apoiar o desenvolvimento de modelos de machine learning (pré-processamento de dados, engenharia de atributos, treinamento de modelos)",
+        "Auxiliar na construção e manutenção de pipelines de dados usando Python, SQL e ferramentas de ETL",
+        "Ajudar na coleta, limpeza e organização de conjuntos de dados provenientes de múltiplas fontes",
+        "Colaborar em análises exploratórias e na criação de visualizações de insights",
+        "Desenvolver scripts para automatizar tarefas repetitivas de processamento de dados",
+        "Testar e validar modelos de IA, documentando resultados e métricas de desempenho",
+        "Dar suporte na implantação de modelos em ambientes de produção ou APIs",
+        "Auxiliar na manutenção de bancos de dados, data warehouses ou sistemas de armazenamento em nuvem",
+        "Preparar notebooks, relatórios e dashboards para apresentar análises e progresso",
+        "Experimentar com LLMs, embeddings, bancos de dados vetoriais e técnicas de prompt engineering sob supervisão"
+      ]
+    },    
+    {
       "title": "Instrutor de Robótica e Programação",
       "company": "PLAY ROBOTICA E GAMES EDUCACIONAL LTDA",
-      "date": "2025 - Presente",
+      "date": "Setembro de 2025 - Outubro de 2025",
       "activities": [
         "Supervisionar os alunos em atividades práticas (montagem de robôs, desenvolvimento de jogos, projetos de programação)",
         "Preparar e organizar materiais didáticos (kits de robótica, computadores, softwares)",

@@ -39,9 +39,26 @@
   },
   "experiences": [
     {
+      "title": "AI & Data Engineering Intern",
+      "company": "Tribunal de Contas do Estado de Goiás (TCE-GO)",
+      "date": "October 2025 - Present",
+      "activities": [
+        "Support the development of machine learning models (data preprocessing, feature engineering, model training)",
+        "Assist in building and maintaining data pipelines using Python, SQL, and ETL tools",
+        "Help collect, clean, and organize datasets from multiple sources",
+        "Collaborate on exploratory data analysis and creation of visual insights",
+        "Develop scripts to automate repetitive data processing tasks",
+        "Test and validate AI models, documenting results and performance metrics",
+        "Support deployment of models into production environments or APIs",
+        "Assist in maintaining databases, data warehouses, or cloud-based storage systems",
+        "Prepare notebooks, reports, and dashboards to present findings and progress",
+        "Experiment with LLMs, embeddings, vector databases, and prompt engineering under supervision"
+      ]
+    },
+    {
       "title": "Programming and Robotics Instructor",
       "company": "PLAY ROBOTICA E GAMES EDUCACIONAL LTDA",
-      "date": "2025 - Present",
+      "date": "September 2025 - October 2025",
       "activities": [
         "Supervise students in hands-on activities (robot assembly, game development, programming projects)",
         "Prepare and organize teaching materials (robotics kits, computers, software)",

@@ -12,7 +12,7 @@ export default function ExperienceCard({
 }: ExperienceCardProps) {
   return (
     <div
-      className={`ml-4 space-y-2 rounded-md bg-indigo-400/60 px-4 py-3 shadow-md shadow-violet-950 backdrop-blur-[2px] sm:ml-6 sm:px-5 sm:py-4 md:ml-7 md:p-6 lg:px-7 lg:py-8 ${experiencesLength > 1 ? "sm:mx-0 sm:max-w-[46%]" : ""} dark:bg-slate-950/70 dark:shadow-violet-100`}
+      className={`ml-4 space-y-2 rounded-md bg-indigo-400/60 px-4 py-3 shadow-md shadow-violet-950 backdrop-blur-[2px] sm:ml-6 sm:px-5 sm:py-4 md:ml-7 md:p-6 lg:px-7 lg:py-8 ${experiencesLength > 1 ? "sm:mx-0 sm:!ml-0 sm:max-w-[46%]" : ""} dark:bg-slate-950/70 dark:shadow-violet-100`}
     >
       <div className="flex flex-col gap-1 text-2xl sm:items-center md:flex-row md:gap-3 md:text-3xl">
         <BusinessCenterIcon

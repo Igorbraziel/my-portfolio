@@ -21,6 +21,7 @@ import SpringIcon from "../components/ui/icons/SpringIcon";
 import JavaIcon from "../components/ui/icons/JavaIcon";
 import JavaScriptIcon from "../components/ui/icons/JavaScriptIcon";
 import TypeScriptIcon from "../components/ui/icons/TypeScriptIcont";
+import AWSIcon from "../components/ui/icons/AWSIcon";
 
 const media = [
   {
@@ -50,6 +51,19 @@ const media = [
 ];
 
 const certificates = [
+  {
+    company: "Udemy",
+    companyIcon: UdemyIcon,
+    course: "AWS Certified Cloud Practitioner CLF-C02",
+    duration: 14.5,
+    url: "https://www.udemy.com/certificate/UC-1e1f9bd5-0a67-4277-94cb-6778a88b6aa8/",
+    technologies: [
+      { techLabel: "AWS", techIcon: AWSIcon },
+      { techLabel: "Machine Learning", techIcon: MachineLearningIcon },
+      { techLabel: "Data Science", techIcon: DataScienceIcon },
+    ],
+    year: 2025,
+  },
   {
     company: "Udemy",
     companyIcon: UdemyIcon,
