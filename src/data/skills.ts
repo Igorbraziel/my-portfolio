@@ -24,8 +24,10 @@ import MergeTypeIcon from "@mui/icons-material/MergeType";
 import DockerIcon from "../components/ui/icons/DockerIcon";
 import AWSIcon from "../components/ui/icons/AWSIcon";
 import PandasIcon from "../components/ui/icons/PandasIcon";
+import AirflowIcon from "../components/ui/icons/AirflowIcon";
 
 const skills = [
+  { techLabel: "Airflow", techIcon: AirflowIcon},
   { techLabel: "React.js", techIcon: ReactIcon },
   { techLabel: "Tailwind CSS", techIcon: TailwindIcon },
   { techLabel: "Python", techIcon: PythonIcon },
@@ -48,16 +50,16 @@ const skills = [
 
 const competenciesList = [
   {
-    competencyIcon: BuildCircleIcon,
+    competencyIcon: CodeIcon,
     competencyTitle: "Back-end Development",
     competencyResume:
       "Django, Python, SpringBoot, Java, Node.js, Express.js, Next.js",
   },
   {
-    competencyIcon: CodeIcon,
-    competencyTitle: "Front-end Development",
+    competencyIcon: BuildCircleIcon,
+    competencyTitle: "Data Engineering",
     competencyResume:
-      "React.js, JavaScript, TypeScript, TailwindCSS, HTML5, Next.js",
+      "Airflow, ETL Pipelines, Data Warehousing, Data Lakes, Pandas",
   },
   {
     competencyIcon: CloudIcon,

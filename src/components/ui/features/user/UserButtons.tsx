@@ -10,7 +10,7 @@ export default function UserButtons() {
   return (
     <div className="flex flex-col justify-between gap-5 sm:flex-row sm:gap-8 lg:gap-12 xl:gap-14">
       <a
-        href="/IgorReisBraziel_FullStack.pdf"
+        href="/IgorReisBraziel_DataScientist.pdf"
         download
         className="flex-1 sm:flex-auto"
       >
@@ -23,7 +23,7 @@ export default function UserButtons() {
         </Button>
       </a>
       <a
-        href="https://drive.google.com/file/d/1YOxVL0IN5_mobAu7BO9D-eDZd94hjXW5/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1T7PJy9jVAWgo-GInC4pDMCWzl08y8jPC/view?usp=drive_link"
         target="_blank"
         className="flex-1 sm:flex-auto"
       >
